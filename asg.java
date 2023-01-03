@@ -259,7 +259,7 @@ class asg {
         }
 
         catch (FileNotFoundException e) {
-
+                System.out.print("File does not exist!");
         }
 
 
