@@ -1,0 +1,8 @@
+[2022-07-07T09:45:14.955] error: _find_node_record: lookup failure for node "=cpu10"
+[2022-07-12T00:20:12.600] error: Security violation, REQUEST_KILL_JOB RPC for JobId=45817 from uid 548300504
+[2022-07-12T00:57:49.711] error: Security violation, REQUEST_KILL_JOB RPC for JobId=45817 from uid 548300504
+[2022-07-12T00:58:48.479] error: Security violation, REQUEST_KILL_JOB RPC for JobId=46151 from uid 548300504
+[2022-07-25T13:40:00.729] _slurm_rpc_complete_job_allocation: JobId=46694 error Job/step already completing or completed
+[2022-07-25T14:16:45.177] _slurm_rpc_complete_job_allocation: JobId=46695 error Job/step already completing or completed
+[2022-07-25T18:12:45.955] _slurm_rpc_complete_job_allocation: JobId=46697 error Job/step already completing or completed
+[2022-07-27T23:01:37.684] error: Security violation, REQUEST_KILL_JOB RPC for JobId=46799 from uid 548200021

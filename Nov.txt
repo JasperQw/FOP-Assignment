@@ -1,0 +1,135 @@
+[2022-11-04T09:33:22.247] error: This association 258(account='free', user='noraini', partition='(null)') does not have access to qos long
+[2022-11-04T12:13:02.896] error: This association 258(account='free', user='noraini', partition='(null)') does not have access to qos long
+[2022-11-04T12:14:03.240] error: This association 258(account='free', user='noraini', partition='(null)') does not have access to qos long
+[2022-11-04T12:14:13.021] error: This association 258(account='free', user='noraini', partition='(null)') does not have access to qos long
+[2022-11-08T00:02:30.299] error: This association 113(account='free', user='hongvin', partition='(null)') does not have access to qos normal
+[2022-11-08T00:03:11.386] error: This association 113(account='free', user='hongvin', partition='(null)') does not have access to qos normal
+[2022-11-08T00:03:48.988] error: This association 113(account='free', user='hongvin', partition='(null)') does not have access to qos normal
+[2022-11-08T00:05:15.238] error: This association 113(account='free', user='hongvin', partition='(null)') does not have access to qos normal
+[2022-11-08T00:05:21.888] error: This association 113(account='free', user='hongvin', partition='(null)') does not have access to qos normal
+[2022-11-08T00:05:35.900] error: This association 113(account='free', user='hongvin', partition='(null)') does not have access to qos normal
+[2022-11-08T00:06:41.391] error: This association 113(account='free', user='hongvin', partition='(null)') does not have access to qos normal
+[2022-11-08T00:07:58.601] error: This association 113(account='free', user='hongvin', partition='(null)') does not have access to qos normal
+[2022-11-08T11:10:05.949] error: This association 242(account='free', user='htt_felicia', partition='(null)') does not have access to qos normal
+[2022-11-08T11:13:02.407] error: This association 242(account='free', user='htt_felicia', partition='(null)') does not have access to qos normal
+[2022-11-08T11:20:26.302] error: This association 242(account='free', user='htt_felicia', partition='(null)') does not have access to qos normal
+[2022-11-08T11:28:39.185] error: This association 242(account='free', user='htt_felicia', partition='(null)') does not have access to qos normal
+[2022-11-08T11:28:45.725] error: This association 242(account='free', user='htt_felicia', partition='(null)') does not have access to qos normal
+[2022-11-08T11:29:30.692] error: This association 242(account='free', user='htt_felicia', partition='(null)') does not have access to qos long
+[2022-11-08T11:30:23.271] error: This association 242(account='free', user='htt_felicia', partition='(null)') does not have access to qos normal
+[2022-11-08T11:38:54.287] error: This association 242(account='free', user='htt_felicia', partition='(null)') does not have access to qos normal
+[2022-11-08T11:41:03.478] error: This association 242(account='free', user='htt_felicia', partition='(null)') does not have access to qos normal
+[2022-11-08T11:51:34.517] error: This association 242(account='free', user='htt_felicia', partition='(null)') does not have access to qos normal
+[2022-11-08T11:53:16.788] error: This association 242(account='free', user='htt_felicia', partition='(null)') does not have access to qos normal
+[2022-11-08T13:56:13.589] error: This association 242(account='free', user='htt_felicia', partition='(null)') does not have access to qos normal
+[2022-11-08T13:57:17.004] error: This association 242(account='free', user='htt_felicia', partition='(null)') does not have access to qos normal
+[2022-11-08T13:59:19.281] error: This association 242(account='free', user='htt_felicia', partition='(null)') does not have access to qos normal
+[2022-11-08T15:52:31.716] error: This association 242(account='free', user='htt_felicia', partition='(null)') does not have access to qos normal
+[2022-11-08T15:59:25.598] error: This association 242(account='free', user='htt_felicia', partition='(null)') does not have access to qos normal
+[2022-11-08T16:18:21.876] error: This association 242(account='free', user='htt_felicia', partition='(null)') does not have access to qos normal
+[2022-11-08T16:25:49.384] error: This association 242(account='free', user='htt_felicia', partition='(null)') does not have access to qos normal
+[2022-11-08T20:55:20.936] error: This association 242(account='free', user='htt_felicia', partition='(null)') does not have access to qos normal
+[2022-11-09T11:15:40.044] error: This association 113(account='free', user='hongvin', partition='(null)') does not have access to qos normal
+[2022-11-09T15:50:54.812] error: This association 246(account='free', user='chiuling', partition='(null)') does not have access to qos long
+[2022-11-09T15:52:27.274] error: Invalid qos (normal*)
+[2022-11-10T13:25:28.767] error: Security violation, REQUEST_KILL_JOB RPC for JobId=52223 from uid 548300621
+[2022-11-12T17:31:02.173] error: sched: Attempt to modify priority for JobId=52407
+[2022-11-12T17:32:23.392] error: Security violation, JOB_UPDATE RPC from uid 548200121
+[2022-11-12T17:33:03.228] error: Security violation, JOB_UPDATE RPC from uid 548200121
+[2022-11-12T17:36:13.370] error: SECURITY VIOLATION: Attempt to suspend job from user 548200121
+[2022-11-14T20:29:49.293] error: This association 242(account='free', user='htt_felicia', partition='(null)') does not have access to qos normal
+[2022-11-14T21:02:31.423] error: This association 242(account='free', user='htt_felicia', partition='(null)') does not have access to qos normal
+[2022-11-16T08:51:03.384] error: _find_node_record: lookup failure for node "cpu02"
+[2022-11-16T08:51:03.384] error: node_name2bitmap: invalid node specified: "cpu02"
+[2022-11-16T08:51:03.384] error: _find_node_record: lookup failure for node "cpu06"
+[2022-11-16T08:51:03.384] error: node_name2bitmap: invalid node specified: "cpu06"
+[2022-11-17T16:07:27.005] _slurm_rpc_complete_job_allocation: JobId=52879 error Invalid job id specified
+[2022-11-17T16:07:27.006] _slurm_rpc_complete_job_allocation: JobId=52869 error Invalid job id specified
+[2022-11-17T16:07:27.007] _slurm_rpc_complete_job_allocation: JobId=52879 error Invalid job id specified
+[2022-11-17T16:07:27.008] _slurm_rpc_complete_job_allocation: JobId=52869 error Invalid job id specified
+[2022-11-17T16:07:27.010] _slurm_rpc_complete_job_allocation: JobId=52869 error Invalid job id specified
+[2022-11-17T16:07:27.011] _slurm_rpc_complete_job_allocation: JobId=52879 error Invalid job id specified
+[2022-11-22T11:25:18.853] error: Security violation, REQUEST_KILL_JOB RPC for JobId=52908 from uid 548300543
+[2022-11-22T11:25:57.809] error: Security violation, REQUEST_KILL_JOB RPC for JobId=52908 from uid 548300543
+[2022-11-24T21:21:30.585] _slurm_rpc_complete_job_allocation: JobId=53067 error Job/step already completing or completed
+[2022-11-24T21:27:34.722] _slurm_rpc_complete_job_allocation: JobId=53070 error Job/step already completing or completed
+[2022-11-25T00:12:39.388] _slurm_rpc_complete_job_allocation: JobId=53081 error Job/step already completing or completed
+[2022-11-25T00:13:57.955] _slurm_rpc_complete_job_allocation: JobId=53082 error Job/step already completing or completed
+[2022-11-25T02:16:46.856] _slurm_rpc_complete_job_allocation: JobId=53080 error Job/step already completing or completed
+[2022-11-25T13:07:18.711] _slurm_rpc_complete_job_allocation: JobId=53102 error Job/step already completing or completed
+[2022-11-26T00:24:39.749] error: Nodes cpu[08,10] not responding, setting DOWN
+[2022-11-26T00:25:59.849] error: Nodes cpu11 not responding, setting DOWN
+[2022-11-26T00:41:19.364] error: Nodes cpu13 not responding
+[2022-11-26T00:41:19.364] error: Nodes cpu13 not responding, setting DOWN
+[2022-11-26T00:42:39.524] error: Nodes cpu14 not responding, setting DOWN
+[2022-11-26T01:40:59.720] error: Nodes cpu13 not responding, setting DOWN
+[2022-11-26T16:47:59.402] _slurm_rpc_complete_job_allocation: JobId=53174 error Job/step already completing or completed
+[2022-11-28T08:27:38.005] error: slurm_msg_sendto: address:port=10.11.132.24:52562 msg_type=8001: No error
+[2022-11-28T08:27:38.005] error: slurm_msg_sendto: address:port=10.11.132.24:52562 msg_type=8001: No error
+[2022-11-28T08:27:38.005] error: slurmd error running JobId=53186 on node(s)=cpu14: Kill task failed
+[2022-11-28T08:27:38.005] error: slurmd error running JobId=53186 on node(s)=cpu14: Kill task failed
+[2022-11-28T09:06:19.193] error: Nodes cpu14 not responding
+[2022-11-28T09:06:23.698] error: Nodes cpu14 not responding, setting DOWN
+[2022-11-28T16:14:23.971] _slurm_rpc_complete_job_allocation: JobId=53210 error Job/step already completing or completed
+[2022-11-29T19:45:49.989] error: job_epilog_complete: JobId=53300 epilog error on cpu01, draining the node
+[2022-11-29T19:45:49.989] error: job_epilog_complete: JobId=53300 epilog error on cpu01, draining the node
+[2022-11-29T19:45:49.989] error: _slurm_rpc_epilog_complete: epilog error JobId=53300 Node=cpu01 Err=Job epilog failed 
+[2022-11-29T19:45:49.989] error: _slurm_rpc_epilog_complete: epilog error JobId=53300 Node=cpu01 Err=Job epilog failed 
+[2022-11-29T19:46:01.163] error: job_epilog_complete: JobId=53193 epilog error on cpu04, draining the node
+[2022-11-29T19:46:01.163] error: job_epilog_complete: JobId=53193 epilog error on cpu04, draining the node
+[2022-11-29T19:46:01.163] error: _slurm_rpc_epilog_complete: epilog error JobId=53193 Node=cpu04 Err=Job epilog failed 
+[2022-11-29T19:46:01.163] error: _slurm_rpc_epilog_complete: epilog error JobId=53193 Node=cpu04 Err=Job epilog failed 
+[2022-11-29T19:46:19.429] error: job_epilog_complete: JobId=53041 epilog error on gpu01, draining the node
+[2022-11-29T19:46:19.429] error: job_epilog_complete: JobId=53041 epilog error on gpu01, draining the node
+[2022-11-29T19:46:19.429] error: _slurm_rpc_epilog_complete: epilog error JobId=53041 Node=gpu01 Err=Job epilog failed 
+[2022-11-29T19:46:19.429] error: _slurm_rpc_epilog_complete: epilog error JobId=53041 Node=gpu01 Err=Job epilog failed 
+[2022-11-29T19:46:31.386] error: job_epilog_complete: JobId=52921 epilog error on gpu02, draining the node
+[2022-11-29T19:46:31.386] error: job_epilog_complete: JobId=52921 epilog error on gpu02, draining the node
+[2022-11-29T19:46:31.386] error: _slurm_rpc_epilog_complete: epilog error JobId=52921 Node=gpu02 Err=Job epilog failed 
+[2022-11-29T19:46:31.386] error: _slurm_rpc_epilog_complete: epilog error JobId=52921 Node=gpu02 Err=Job epilog failed 
+[2022-11-29T19:47:32.122] error: job_epilog_complete: JobId=53138 epilog error on cpu08, draining the node
+[2022-11-29T19:47:32.122] error: job_epilog_complete: JobId=53138 epilog error on cpu08, draining the node
+[2022-11-29T19:47:32.123] error: _slurm_rpc_epilog_complete: epilog error JobId=53138 Node=cpu08 Err=Job epilog failed 
+[2022-11-29T19:47:32.123] error: _slurm_rpc_epilog_complete: epilog error JobId=53138 Node=cpu08 Err=Job epilog failed 
+[2022-11-29T19:47:38.245] error: job_epilog_complete: JobId=53137 epilog error on cpu07, draining the node
+[2022-11-29T19:47:38.245] error: job_epilog_complete: JobId=53137 epilog error on cpu07, draining the node
+[2022-11-29T19:47:38.246] error: _slurm_rpc_epilog_complete: epilog error JobId=53137 Node=cpu07 Err=Job epilog failed 
+[2022-11-29T19:47:38.246] error: _slurm_rpc_epilog_complete: epilog error JobId=53137 Node=cpu07 Err=Job epilog failed 
+[2022-11-29T19:47:38.524] error: job_epilog_complete: JobId=53139 epilog error on cpu09, draining the node
+[2022-11-29T19:47:38.524] error: job_epilog_complete: JobId=53139 epilog error on cpu09, draining the node
+[2022-11-29T19:47:38.525] error: _slurm_rpc_epilog_complete: epilog error JobId=53139 Node=cpu09 Err=Job epilog failed 
+[2022-11-29T19:47:38.525] error: _slurm_rpc_epilog_complete: epilog error JobId=53139 Node=cpu09 Err=Job epilog failed 
+[2022-11-29T19:47:44.409] error: job_epilog_complete: JobId=53136 epilog error on cpu05, draining the node
+[2022-11-29T19:47:44.409] error: job_epilog_complete: JobId=53136 epilog error on cpu05, draining the node
+[2022-11-29T19:47:44.409] error: _slurm_rpc_epilog_complete: epilog error JobId=53136 Node=cpu05 Err=Job epilog failed 
+[2022-11-29T19:47:44.409] error: _slurm_rpc_epilog_complete: epilog error JobId=53136 Node=cpu05 Err=Job epilog failed 
+[2022-11-29T19:54:12.964] error: job_epilog_complete: JobId=53255 epilog error on cpu15, draining the node
+[2022-11-29T19:54:12.964] error: job_epilog_complete: JobId=53255 epilog error on cpu15, draining the node
+[2022-11-29T19:54:12.965] error: _slurm_rpc_epilog_complete: epilog error JobId=53255 Node=cpu15 Err=Job epilog failed 
+[2022-11-29T19:54:12.965] error: _slurm_rpc_epilog_complete: epilog error JobId=53255 Node=cpu15 Err=Job epilog failed 
+[2022-11-29T19:54:13.966] error: job_epilog_complete: JobId=53256 epilog error on cpu15, draining the node
+[2022-11-29T19:54:13.966] error: job_epilog_complete: JobId=53256 epilog error on cpu15, draining the node
+[2022-11-29T19:54:13.966] error: _slurm_rpc_epilog_complete: epilog error JobId=53256 Node=cpu15 Err=Job epilog failed 
+[2022-11-29T19:54:13.966] error: _slurm_rpc_epilog_complete: epilog error JobId=53256 Node=cpu15 Err=Job epilog failed 
+[2022-11-29T19:54:16.928] error: job_epilog_complete: JobId=53199 epilog error on cpu15, draining the node
+[2022-11-29T19:54:16.928] error: job_epilog_complete: JobId=53199 epilog error on cpu15, draining the node
+[2022-11-29T19:54:16.928] error: _slurm_rpc_epilog_complete: epilog error JobId=53199 Node=cpu15 Err=Job epilog failed 
+[2022-11-29T19:54:16.928] error: _slurm_rpc_epilog_complete: epilog error JobId=53199 Node=cpu15 Err=Job epilog failed 
+[2022-11-29T19:57:06.549] error: job_epilog_complete: JobId=53200 epilog error on cpu11, draining the node
+[2022-11-29T19:57:06.549] error: job_epilog_complete: JobId=53200 epilog error on cpu11, draining the node
+[2022-11-29T19:57:06.549] error: _slurm_rpc_epilog_complete: epilog error JobId=53200 Node=cpu11 Err=Job epilog failed 
+[2022-11-29T19:57:06.549] error: _slurm_rpc_epilog_complete: epilog error JobId=53200 Node=cpu11 Err=Job epilog failed 
+[2022-11-29T19:57:11.703] error: job_epilog_complete: JobId=53196 epilog error on cpu03, draining the node
+[2022-11-29T19:57:11.703] error: job_epilog_complete: JobId=53196 epilog error on cpu03, draining the node
+[2022-11-29T19:57:11.703] error: _slurm_rpc_epilog_complete: epilog error JobId=53196 Node=cpu03 Err=Job epilog failed 
+[2022-11-29T19:57:11.703] error: _slurm_rpc_epilog_complete: epilog error JobId=53196 Node=cpu03 Err=Job epilog failed 
+[2022-11-29T19:58:55.096] error: job_epilog_complete: JobId=53115 epilog error on gpu02, draining the node
+[2022-11-29T19:58:55.096] error: job_epilog_complete: JobId=53115 epilog error on gpu02, draining the node
+[2022-11-29T19:58:55.096] error: _slurm_rpc_epilog_complete: epilog error JobId=53115 Node=gpu02 Err=Job epilog failed 
+[2022-11-29T19:58:55.096] error: _slurm_rpc_epilog_complete: epilog error JobId=53115 Node=gpu02 Err=Job epilog failed 
+[2022-11-29T19:59:14.428] error: job_epilog_complete: JobId=52498 epilog error on gpu05, draining the node
+[2022-11-29T19:59:14.428] error: job_epilog_complete: JobId=52498 epilog error on gpu05, draining the node
+[2022-11-29T19:59:14.428] error: _slurm_rpc_epilog_complete: epilog error JobId=52498 Node=gpu05 Err=Job epilog failed 
+[2022-11-29T19:59:14.428] error: _slurm_rpc_epilog_complete: epilog error JobId=52498 Node=gpu05 Err=Job epilog failed 
+[2022-11-30T09:32:41.439] error: Nodes cpu11 not responding, setting DOWN
+[2022-11-30T10:30:01.016] error: Nodes cpu11 not responding, setting DOWN

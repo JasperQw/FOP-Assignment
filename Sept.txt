@@ -1,0 +1,186 @@
+[2022-09-05T12:18:15.836] error: This association 234(account='free', user='hva170037', partition='(null)') does not have access to qos normal
+[2022-09-05T12:18:55.798] error: This association 234(account='free', user='hva170037', partition='(null)') does not have access to qos normal
+[2022-09-05T12:23:04.951] error: Invalid qos (general-compute)
+[2022-09-05T12:25:03.955] error: Invalid qos (cpu-epyc)
+[2022-09-05T12:27:06.647] error: Invalid qos (normal*)
+[2022-09-05T12:28:15.502] error: This association 234(account='free', user='hva170037', partition='(null)') does not have access to qos long
+[2022-09-05T12:33:15.973] error: This association 234(account='free', user='hva170037', partition='(null)') does not have access to qos long
+[2022-09-05T12:47:07.447] error: This association 234(account='free', user='hva170037', partition='(null)') does not have access to qos normal
+[2022-09-07T11:43:33.733] error: This association 43(account='free', user='han', partition='(null)') does not have access to qos normal
+[2022-09-07T11:43:58.475] error: This association 43(account='free', user='han', partition='(null)') does not have access to qos normal
+[2022-09-07T16:10:37.192] error: This association 43(account='free', user='han', partition='(null)') does not have access to qos normal
+[2022-09-07T16:18:00.884] _slurm_rpc_complete_job_allocation: JobId=48886 error Job/step already completing or completed
+[2022-09-21T14:53:22.699] error: This association 212(account='free', user='yatyuen.lim', partition='(null)') does not have access to qos long
+[2022-09-22T13:05:01.768] error: Nodes cpu12 not responding, setting DOWN
+[2022-09-22T14:00:09.365] error: Configured cpu count change on cpu07 (64 to 32)
+[2022-09-22T14:00:09.368] error: _slurm_rpc_reconfigure_controller: The node configuration changes that were made require restart of the slurmctld daemon to take effect
+[2022-09-22T14:00:25.570] error: Node cpu07 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+[2022-09-22T14:00:25.571] error: Node cpu03 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+[2022-09-22T14:00:25.571] error: Node cpu13 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+[2022-09-22T14:00:25.571] error: Node cpu12 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+[2022-09-22T14:00:25.572] error: Node cpu01 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+[2022-09-22T14:00:25.572] error: Node cpu05 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+[2022-09-22T14:00:25.573] error: Node cpu09 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+[2022-09-22T14:00:25.573] error: Node cpu14 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+[2022-09-22T14:00:25.573] error: Node cpu15 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+[2022-09-22T14:00:25.573] error: Node cpu10 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+[2022-09-22T14:00:25.573] error: Node cpu11 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+[2022-09-22T14:00:25.573] error: Node gpu01 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+[2022-09-22T14:00:25.574] error: Node gpu03 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+[2022-09-22T14:00:25.574] error: Node cpu04 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+[2022-09-22T14:00:25.574] error: Node gpu02 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+[2022-09-22T14:00:25.575] error: Node gpu05 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+[2022-09-22T14:00:25.575] error: Node gpu04 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+[2022-09-22T14:00:25.576] error: Node cpu08 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+[2022-09-22T14:01:56.125] error: slurmd error running JobId=49477 on node(s)=cpu07: Slurmd could not execve job
+[2022-09-22T14:01:56.125] error: slurmd error running JobId=49477 on node(s)=cpu07: Slurmd could not execve job
+[2022-09-22T14:04:06.412] _slurm_rpc_requeue: Requeue of JobId=49477 returned an error: Job is pending execution
+[2022-09-22T14:04:15.087] error: slurmd error running JobId=49477 on node(s)=cpu07: Slurmd could not execve job
+[2022-09-22T14:04:15.087] error: slurmd error running JobId=49477 on node(s)=cpu07: Slurmd could not execve job
+[2022-09-22T14:05:50.707] error: valid_job_resources: cpu07 sockets:8,4, cores 8,8
+[2022-09-22T14:05:50.707] error: Aborting JobId=49477 due to change in socket/core configuration of allocated nodes
+[2022-09-22T14:06:59.337] error: slurmd error running JobId=49480 on node(s)=cpu07: Slurmd could not execve job
+[2022-09-22T14:06:59.337] error: slurmd error running JobId=49480 on node(s)=cpu07: Slurmd could not execve job
+[2022-09-22T14:10:43.400] error: Nodes cpu07 not responding, setting DOWN
+[2022-09-23T11:50:01.529] error: Nodes umhpc not responding, setting DOWN
+[2022-09-23T23:52:35.651] error: slurm_receive_msgs: [[cpu15.dicc.um.edu.my]:6818] failed: Socket timed out on send/recv operation
+[2022-09-23T23:52:44.666] error: Nodes cpu15 not responding, setting DOWN
+[2022-09-23T23:52:54.678] error: slurm_receive_msgs: [[cpu15.dicc.um.edu.my]:6818] failed: Socket timed out on send/recv operation
+[2022-09-23T23:59:05.083] error: slurm_receive_msgs: [[cpu15.dicc.um.edu.my]:6818] failed: Socket timed out on send/recv operation
+[2022-09-24T00:00:53.413] error: Nodes cpu15 not responding
+[2022-09-24T00:01:51.717] error: slurm_receive_msg [10.11.132.25:56376]: Socket timed out on send/recv operation
+[2022-09-24T00:09:27.717] error: slurm_receive_msg [10.11.132.25:56386]: Socket timed out on send/recv operation
+[2022-09-24T00:44:54.240] error: slurm_receive_msgs: [[cpu15.dicc.um.edu.my]:6818] failed: Socket timed out on send/recv operation
+[2022-09-24T00:45:53.318] error: Nodes cpu15 not responding
+[2022-09-24T00:57:08.790] _slurm_rpc_requeue: Requeue of JobId=49564 returned an error: Job is pending execution
+[2022-09-24T01:11:43.907] error: slurm_receive_msg [10.11.132.25:56452]: Socket timed out on send/recv operation
+[2022-09-24T01:28:30.651] error: slurm_receive_msg [10.11.132.25:56464]: Socket timed out on send/recv operation
+[2022-09-24T01:28:32.647] error: slurm_receive_msg [10.11.132.25:56468]: Socket timed out on send/recv operation
+[2022-09-24T02:37:22.374] error: slurm_receive_msg [10.11.132.25:56532]: Socket timed out on send/recv operation
+[2022-09-24T02:37:22.374] error: slurm_receive_msg [10.11.132.25:56534]: Socket timed out on send/recv operation
+[2022-09-24T02:37:24.379] error: slurm_receive_msg [10.11.132.25:56542]: Socket timed out on send/recv operation
+[2022-09-24T02:37:24.379] error: slurm_receive_msg [10.11.132.25:56540]: Socket timed out on send/recv operation
+[2022-09-24T02:37:24.380] error: slurm_receive_msg [10.11.132.25:56538]: Socket timed out on send/recv operation
+[2022-09-24T02:37:26.372] error: slurm_receive_msg [10.11.132.25:56544]: Socket timed out on send/recv operation
+[2022-09-24T02:43:07.369] error: slurm_receive_msg [10.11.132.25:56546]: Socket timed out on send/recv operation
+[2022-09-24T02:49:40.892] error: slurm_receive_msg [10.11.132.25:56554]: Socket timed out on send/recv operation
+[2022-09-24T02:55:37.499] error: slurm_receive_msg [10.11.132.25:56564]: Socket timed out on send/recv operation
+[2022-09-24T02:55:39.502] error: slurm_receive_msg [10.11.132.25:56570]: Socket timed out on send/recv operation
+[2022-09-24T02:56:02.521] error: slurm_receive_msg [10.11.132.25:56572]: Socket timed out on send/recv operation
+[2022-09-24T03:02:25.770] error: slurm_receive_msg [10.11.132.25:56576]: Socket timed out on send/recv operation
+[2022-09-24T03:08:43.080] error: slurm_receive_msg [10.11.132.25:56588]: Socket timed out on send/recv operation
+[2022-09-24T03:08:45.085] error: slurm_receive_msg [10.11.132.25:56590]: Socket timed out on send/recv operation
+[2022-09-24T03:39:07.353] error: slurm_receive_msg [10.11.132.25:56634]: Socket timed out on send/recv operation
+[2022-09-24T04:52:15.380] error: slurm_receive_msg [10.11.132.25:56734]: Socket timed out on send/recv operation
+[2022-09-24T05:02:54.197] error: slurm_receive_msg [10.11.132.25:56739]: Socket timed out on send/recv operation
+[2022-09-24T05:02:56.199] error: slurm_receive_msg [10.11.132.25:56742]: Socket timed out on send/recv operation
+[2022-09-24T05:13:52.365] error: slurm_receive_msg [10.11.132.25:56754]: Socket timed out on send/recv operation
+[2022-09-24T05:14:05.368] error: slurm_receive_msg [10.11.132.25:56758]: Socket timed out on send/recv operation
+[2022-09-24T05:23:47.716] error: slurm_receive_msg [10.11.132.25:56770]: Socket timed out on send/recv operation
+[2022-09-24T05:41:18.534] error: slurm_receive_msg [10.11.132.25:56782]: Socket timed out on send/recv operation
+[2022-09-24T05:41:20.539] error: slurm_receive_msg [10.11.132.25:56784]: Socket timed out on send/recv operation
+[2022-09-24T05:45:56.135] error: slurm_receive_msg [10.11.132.25:56790]: Socket timed out on send/recv operation
+[2022-09-24T05:51:49.892] error: slurm_receive_msg [10.11.132.25:56800]: Socket timed out on send/recv operation
+[2022-09-24T05:51:51.895] error: slurm_receive_msg [10.11.132.25:56804]: Socket timed out on send/recv operation
+[2022-09-24T06:55:04.191] error: slurm_receive_msg [10.11.132.25:56882]: Socket timed out on send/recv operation
+[2022-09-24T06:55:21.188] error: slurm_receive_msg [10.11.132.25:56886]: Socket timed out on send/recv operation
+[2022-09-24T08:10:47.993] error: slurm_receive_msg [10.11.132.25:56962]: Socket timed out on send/recv operation
+[2022-09-24T08:11:23.024] error: slurm_receive_msg [10.11.132.25:56964]: Socket timed out on send/recv operation
+[2022-09-24T09:44:36.278] error: slurm_receive_msg [10.11.132.25:57020]: Socket timed out on send/recv operation
+[2022-09-24T09:44:38.281] error: slurm_receive_msg [10.11.132.25:57024]: Socket timed out on send/recv operation
+[2022-09-24T09:44:38.281] error: slurm_receive_msg [10.11.132.25:57028]: Socket timed out on send/recv operation
+[2022-09-24T10:05:27.416] error: slurm_receive_msg [10.11.132.25:57050]: Socket timed out on send/recv operation
+[2022-09-24T10:05:43.429] error: slurm_receive_msg [10.11.132.25:57054]: Socket timed out on send/recv operation
+[2022-09-24T10:16:29.664] error: slurm_receive_msg [10.11.132.25:57056]: Socket timed out on send/recv operation
+[2022-09-24T10:16:35.671] error: slurm_receive_msg [10.11.132.25:57060]: Socket timed out on send/recv operation
+[2022-09-24T10:25:21.285] error: slurm_receive_msg [10.11.132.25:57072]: Socket timed out on send/recv operation
+[2022-09-24T10:25:38.297] error: slurm_receive_msg [10.11.132.25:57076]: Socket timed out on send/recv operation
+[2022-09-24T10:43:27.916] error: slurm_receive_msg [10.11.132.25:57086]: Socket timed out on send/recv operation
+[2022-09-24T10:43:29.920] error: slurm_receive_msg [10.11.132.25:57090]: Socket timed out on send/recv operation
+[2022-09-24T11:21:12.049] error: slurm_receive_msg [10.11.132.25:57122]: Socket timed out on send/recv operation
+[2022-09-24T11:21:14.051] error: slurm_receive_msg [10.11.132.25:57124]: Socket timed out on send/recv operation
+[2022-09-24T11:28:11.826] error: slurm_receive_msg [10.11.132.25:57130]: Socket timed out on send/recv operation
+[2022-09-24T11:28:26.835] error: slurm_receive_msg [10.11.132.25:57132]: Socket timed out on send/recv operation
+[2022-09-24T11:37:28.876] error: slurm_receive_msg [10.11.132.25:57144]: Socket timed out on send/recv operation
+[2022-09-24T12:13:05.003] _slurm_rpc_requeue: Requeue of JobId=49564 returned an error: Job is pending execution
+[2022-09-24T12:13:12.643] error: slurm_receive_msgs: [[cpu12.dicc.um.edu.my]:6818] failed: Socket timed out on send/recv operation
+[2022-09-24T12:15:53.795] error: Nodes cpu12 not responding
+[2022-09-24T12:17:27.027] error: Nodes cpu12 not responding, setting DOWN
+[2022-09-24T12:19:27.192] error: Nodes cpu15 not responding, setting DOWN
+[2022-09-24T20:22:22.414] error: slurm_receive_msg [10.11.132.22:60982]: Socket timed out on send/recv operation
+[2022-09-24T23:09:41.446] error: slurm_receive_msgs: [[cpu12.dicc.um.edu.my]:6818] failed: Socket timed out on send/recv operation
+[2022-09-24T23:10:54.371] error: Nodes cpu12 not responding
+[2022-09-24T23:13:30.693] error: Nodes cpu12 not responding, setting DOWN
+[2022-09-27T14:40:00.633] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:40:00.633] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:41:00.635] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:41:00.635] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:42:00.636] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:42:00.636] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:43:00.637] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:43:00.637] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:44:00.638] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:44:00.638] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:45:00.639] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:45:00.640] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:46:00.641] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:46:00.641] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:47:00.642] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:47:00.642] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:48:00.643] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:48:00.643] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:49:00.644] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:49:00.645] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:50:00.662] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:50:00.662] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:51:00.663] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:51:00.663] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:52:00.664] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:52:00.664] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:53:00.666] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:53:00.666] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:54:00.667] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:54:00.667] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:55:00.668] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:55:00.668] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:56:00.670] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:56:00.670] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:57:00.671] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:57:00.671] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:58:00.672] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:58:00.672] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:59:00.673] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T14:59:00.673] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:00:00.675] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:00:00.675] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:01:00.676] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:01:00.676] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:02:00.678] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:02:00.678] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:03:00.679] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:03:00.679] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:04:00.680] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:04:00.680] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:05:00.682] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:05:00.682] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:06:00.683] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:06:00.683] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:07:00.684] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:07:00.684] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:08:00.686] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:08:00.686] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:09:00.687] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:09:00.687] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:10:00.688] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:10:00.688] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:11:00.690] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-27T15:11:00.690] error: gres/gpu: job 49534 dealloc node gpu02 type titanxp gres count underflow (0 1)
+[2022-09-29T09:08:25.149] error: slurm_receive_msgs: [[cpu15.dicc.um.edu.my]:6818] failed: Socket timed out on send/recv operation
+[2022-09-29T09:09:22.714] error: Nodes cpu15 not responding, setting DOWN
+[2022-09-29T13:29:43.779] _slurm_rpc_complete_job_allocation: JobId=49855 error Job/step already completing or completed
+[2022-09-29T17:17:07.406] error: slurm_receive_msgs: [[cpu15.dicc.um.edu.my]:6818] failed: Socket timed out on send/recv operation
+[2022-09-29T17:18:44.850] error: Nodes cpu15 not responding, setting DOWN
+[2022-09-29T19:26:43.982] error: _get_group_members: Could not find configured group training
+[2022-09-30T23:33:30.135] error: slurm_receive_msgs: [[cpu15.dicc.um.edu.my]:6818] failed: Socket timed out on send/recv operation
+[2022-09-30T23:35:57.260] error: Nodes cpu15 not responding
+[2022-09-30T23:36:51.492] error: Nodes cpu15 not responding, setting DOWN
