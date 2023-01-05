@@ -21,13 +21,9 @@ public class Jobs_allocated {
         int count_allocate = 0;
         while(in.hasNextLine()) {
             String temp = in.nextLine();
-            if(temp.charAt(7) == month) {
-                String [] array = temp.split(" ");
-                if (array.length == 7) {
-                    if (array[2].equals("Allocate")) {  //Job allocated
-                        //System.out.println(Arrays.toString(array));
-                        count_allocate ++;
-                    }}
+            String [] array = temp.split(" ");
+            if(temp.charAt(7) == month && array.length == 7 && array[2].equals("Allocate")) {
+                count_allocate ++;
             }
         }
         return count_allocate;

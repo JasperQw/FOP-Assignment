@@ -18,7 +18,6 @@ public class Type_partition {
         System.out.println("Partition type: " + Partition_type('1') + "\n");
         System.out.println("Number partition type in December: " + Partition_type('2').size());
         System.out.println("Partition type: " + Partition_type('2') + "\n");
-        
     }
 
     public static ArrayList<String> Partition_type(char month) throws FileNotFoundException {
@@ -26,19 +25,11 @@ public class Type_partition {
         ArrayList<String> list_partition_type = new ArrayList<>();
         while(in.hasNextLine()) {
             String temp = in.nextLine();
-            
-            if(temp.charAt(7) == month) {
-                String [] array = temp.split(" ");
-                if (array.length == 7) {
-                    if ((array[6]).matches("Partition=.*")) { //Type of cpu
-                        if (list_partition_type.indexOf(array[6]) == -1) {
-                            list_partition_type.add(array[6]);
-                        }
-            }
-            }
+            String [] array = temp.split(" ");
+            if(temp.charAt(7) == month && array.length == 7 && (array[6]).matches("Partition=.*") && list_partition_type.indexOf(array[6]) == -1) {
+                list_partition_type.add(array[6]);
         }
     }
-
     for (int i = 0; i < list_partition_type.size(); i ++) {
         list_partition_type.set(i, list_partition_type.get(i).replace("Partition=", ""));
     }

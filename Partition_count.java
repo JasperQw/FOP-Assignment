@@ -33,18 +33,9 @@ public class Partition_count extends Type_partition {
         int count = 0;
         while(in.hasNextLine()) {
             String temp = in.nextLine();
-            
-            if(temp.charAt(7) == month) {
-                String [] array = temp.split(" ");
-                if (array.length == 7) {
-                    if ((array[6]).matches("Partition=.*")) {
-                        //System.out.println(Arrays.toString(array));
-
-                        if (array[6].equals("Partition=" + partition_name)) {
-                            count ++;
-                        }                  
-                }
-            }
+            String [] array = temp.split(" ");
+            if(temp.charAt(7) == month && array.length == 7 && array[6].equals("Partition=" + partition_name)) {
+                count ++;
         }
     }
         return count;
