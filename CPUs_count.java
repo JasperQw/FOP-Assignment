@@ -3,69 +3,70 @@ import java.util.*;
 
 public class CPUs_count extends Type_partition {
     public static void main(String [] args) throws FileNotFoundException {
-        ArrayList<String> listing = new ArrayList<>();
         
         System.out.println("For June:");
-        getCPUsType('6',listing);
+        CPUs_used('6');
         System.out.println();
 
         System.out.println("For July:");
-        getCPUsType('7', listing);
+        CPUs_used('7');
         System.out.println();
 
         System.out.println("For August:");
-        getCPUsType('8', listing);
+        CPUs_used('8');
         System.out.println();
 
         System.out.println("For September:");
-        getCPUsType('9', listing);
+        CPUs_used('9');
         System.out.println();
 
         System.out.println("For October:");
-        getCPUsType('0', listing);
+        CPUs_used('0');
         System.out.println();
 
         System.out.println("For November:");
-        getCPUsType('1', listing);
+        CPUs_used('1');
         System.out.println();
 
         System.out.println("For December:");
-        getCPUsType('2', listing);
+        CPUs_used('2');
         System.out.println();
     }
     
 
-    public static ArrayList<String> CPUs_used(char month, String partition_name) throws FileNotFoundException {
-        ArrayList<String> list = new ArrayList<>();
+    public static void CPUs_used(char month) throws FileNotFoundException {
+        for (int i = 0; i < Type_partition.Partition_type(month).length; i ++) {
+            ArrayList<String> list = new ArrayList<>();
+            Scanner in = new Scanner(new FileInputStream("extracted_log"));
+            while(in.hasNextLine()) {
+                String temp = in.nextLine();
+                String [] array = temp.split(" ");
+                if(temp.charAt(7) == month && array.length == 7 && (array[6]).matches("Partition=.*") && array[6].equals("Partition=" + Type_partition.Partition_type('6')[i]) && array[5].matches("#CPUs=.*") && list.indexOf(array[5]) == -1) {
+                    list.add(array[5]);
+            }
+        }
+        System.out.println("CPUs types for " + Type_partition.Partition_type(month)[i] + ": " + list);
+    }
+        
+     /*    ArrayList<String> list = new ArrayList<>();
         Scanner in = new Scanner(new FileInputStream("extracted_log"));
         while(in.hasNextLine()) {
             String temp = in.nextLine();
-            if(temp.charAt(7) == month) {
-                String [] array = temp.split(" ");
-                if (array.length == 7) {
-                    if ((array[6]).matches("Partition=.*")) {
-                        //System.out.println(Arrays.toString(array));
-
-                        if (array[6].equals("Partition=" + partition_name)) {
-                            if (array[5].matches("#CPUs=.*")) {
-                                if (list.indexOf(array[5]) == -1) {
-                                    list.add(array[5]);
-                                }
-                            } 
-                        }                  
-                }
-                    
-            }
+            String [] array = temp.split(" ");
+            if(temp.charAt(7) == month && array.length == 7 && (array[6]).matches("Partition=.*") && array[6].equals("Partition=" + partition_name) && array[5].matches("#CPUs=.*") && list.indexOf(array[5]) == -1) {
+                list.add(array[5]);
         }
     }
-
+    Object arr[] = list.toArray();
+    Arrays.sort(arr);
     return list;
 }
 
-    public static void getCPUsType(char month, ArrayList<String> listing) throws FileNotFoundException{
-        for(int i = 0; i < Type_partition.Partition_type(month).size(); i ++) {
-            System.out.println("CPUs types for " + Type_partition.Partition_type(month).get(i) + ": " + CPUs_used(month, Type_partition.Partition_type(month).get(i)));
+    public static void CPUs_used(char month, ArrayList<String> listing) throws FileNotFoundException{
+        for(int i = 0; i < Type_partition.Partition_type(month).length; i ++) {
+            System.out.println("CPUs types for " + Type_partition.Partition_type(month)[i] + ": " + CPUs_used(month, Type_partition.Partition_type(month)[i].toString()));
             //listing.add(Arrays.toString(CPUs_used(month, Type_partition.Partition_type(month).get(i)).toArray()));
         }
-    }
+    } */
+}
 }
