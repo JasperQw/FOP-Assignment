@@ -64,11 +64,6 @@ public class Code_that_extracting_Error_into_txt{
             output9.close();
             output10.close();
             output11.close();
-            output12.close();
-
-            
-            
-    }
-
-    
+            output12.close();       
+    }  
 }
