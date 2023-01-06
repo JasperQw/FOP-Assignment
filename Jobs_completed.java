@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Jobs_completed {
-    
+    static int count_completed_job = 0;
     public static void main(String [] args) throws FileNotFoundException {
         System.out.println("Completed Jobs in June: " + completion('6'));
         System.out.println("Completed Jobs in July: " + completion('7'));
@@ -10,7 +10,8 @@ public class Jobs_completed {
         System.out.println("Completed Jobs in September: " + completion('9'));
         System.out.println("Completed Jobs in October: " + completion('0'));
         System.out.println("Completed Jobs in November: " + completion('1'));
-        System.out.println("Completed Jobs in December: " + completion('2'));
+        System.out.println("Completed Jobs in December: " + completion('2') + "\n");
+        System.out.println("Total Completed Jobs: " + count_completed_job);
     }
 
     public static int completion(char month) throws FileNotFoundException {
@@ -23,6 +24,7 @@ public class Jobs_completed {
                 count_complete ++;
             }
         }
+        count_completed_job += count_complete;
         return count_complete;
     }
 }
