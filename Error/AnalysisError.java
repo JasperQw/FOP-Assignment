@@ -52,7 +52,7 @@ public class AnalysisError{
                     System.out.println("The month that have the most error: November");
                 }
                 else{
-                    System.out.println("The month that have the most error: December");
+                    System.out.println("The month that have the least error: December");
                 }
     }
 }
