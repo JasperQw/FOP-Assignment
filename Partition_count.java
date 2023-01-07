@@ -37,7 +37,7 @@ public class Partition_count extends Type_partition{
             String [] array = temp.split(" ");
             if(temp.charAt(7) == month && array.length == 7 && array[6].equals("Partition=" + arr[i].toString())) {
                 count ++;
-        }
+            }
     }
     System.out.println("Number of " + arr[i].toString() + ": " + count);
     }

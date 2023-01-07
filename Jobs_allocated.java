@@ -18,16 +18,18 @@ public class Jobs_allocated {
 
 
     public static int allocation(char month) throws FileNotFoundException {
+        PrintWriter writer = new PrintWriter(new FileOutputStream("allocatedJobs.txt",true));
         Scanner in = new Scanner(new FileInputStream("extracted_log"));
         int count_allocate = 0;
         while(in.hasNextLine()) {
             String temp = in.nextLine();
-            String [] array = temp.split(" ");
-            if(temp.charAt(7) == month && array.length == 7 && array[2].equals("Allocate")) {
+            if(temp.contains("Allocate JobId") && temp.charAt(7) == month) {
+                writer.println(temp);
                 count_allocate ++;
             }
         }
         count_allocated_job+=count_allocate;
+        writer.close();
         return count_allocate;
     }
 }
