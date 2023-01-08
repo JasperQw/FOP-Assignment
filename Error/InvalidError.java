@@ -62,6 +62,7 @@ public class InvalidError {
                 AnalysisError obj = new AnalysisError(Error6,Error7,Error8,Error9,Error10,Error11,Error12);
                 obj.Max();      
                 obj.Min();
+                obj.Average();
         } catch (FileNotFoundException ex) {
             System.out.println("Error: " + ex);
         }
