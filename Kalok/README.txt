@@ -27,12 +27,16 @@
 
 //
 6. submitfailreasons.java
-
+->read from jobssubmittedfailed.txt
+->filter out all possible types of failure reasons.
+->print into reasontypes.txt
 
 
 //
-7.organizedJobId.java
-
+7.timeintervalbetweennewsubmission
+->read from simplified3importantall.txt
+->find out the time interval between every new submission (organized in months)
+->print it into timeintervalbetweennewsubmission.txt
 
 
 //
@@ -50,7 +54,7 @@
 //
 10. submittedfailreasonsnumber.java
 ->read from jobssubmittedfailed.txt
-->count the total number of each submit failed reason type (total 936)
+->count the total number of each submit failed reason types (total 936)
 
 //
 11.jobssubmitted&allocated&completedfull.txt
@@ -60,4 +64,9 @@
 
 //
 12.simplified3importantall.txt
--> simplified version of 11.jobssubmitted&allocated&completedfull.txt, where consist of JobId and numbers of allocate,completed,submitted
+-> simplified version of 11.jobssubmitted&allocated&completedfull.txt, where consist of JobId and numbers of allocate OR completed OR submitted
+
+
+//
+13.simplified3importantAND.txt
+-> simplified version of 11.jobssubmitted&allocated&completedfull.txt, where consist of JobId and numbers of allocate AND completed AND submitted

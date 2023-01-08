@@ -57,9 +57,9 @@ public class detailsofjob {
          countallocated+=jobsallocated.size();
          countsubmitted+=jobssubmitted.size();
 
-         System.out.println("The total jobs completed in month "+ month +"\n"+jobscompleted.size());
-         System.out.println("The total jobs allocated in month "+ month +"\n"+jobsallocated.size());
-         System.out.println("The total jobs submitted in month "+ month +"\n"+jobssubmitted.size());
+         System.out.println("The total jobs completed in month :"+ month +"\n"+jobscompleted.size());
+         System.out.println("The total jobs allocated in month :"+ month +"\n"+jobsallocated.size());
+         System.out.println("The total jobs submitted in month :"+ month +"\n"+jobssubmitted.size());
 
 
         //outputing the jobsallocated into new text file
