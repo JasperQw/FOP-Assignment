@@ -55,5 +55,11 @@ public class AnalysisError{
                     System.out.println("The month that have the least error: December");
                 }
     }
+    public void Average(){
+        double average = 0;
+        int sum = Error6 + Error7 + Error8 + Error9 + Error10 + Error11 + Error12;
+        average = (double) sum / 7;
+        System.out.printf("The average error in 7 months: %.2f" ,average);
+    }
 }
             
