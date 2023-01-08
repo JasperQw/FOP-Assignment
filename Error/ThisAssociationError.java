@@ -18,7 +18,7 @@ public class ThisAssociationError {
             String input="This association";
             int count=0;
             
-            int June = 0;
+            int June=0;
             int July=0;
             int Aug=0;
             int Sep=0;
@@ -84,7 +84,6 @@ public class ThisAssociationError {
                     System.out.println("\nThis association does not have access to qos long: "+qos[0]);
                     System.out.println("This association does not have access to qos normal: "+qos[1]);
                     
-            
             }
             content.close();
             print.close();     
@@ -141,7 +140,4 @@ public class ThisAssociationError {
         }
     
     }
-}
-  
-        
-        
+} 
