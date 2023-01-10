@@ -1,3 +1,4 @@
+import Data.Table;
 import java.io.*;
 import java.util.Scanner;
 public class SecurityError {
@@ -51,18 +52,29 @@ public class SecurityError {
                         Error12 += 1; 
                 }            
             } 
-                System.out.println("The total security error occur in June: " + Error6);
-                System.out.println("The total security error occur in July: " + Error7);
-                System.out.println("The total security error occur in August: " + Error8);
-                System.out.println("The total security error occur in September: " + Error9);
-                System.out.println("The total security error occur in October: " + Error10);
-                System.out.println("The total security error occur in November: " + Error11);
-                System.out.println("The total security error occur in December: " + Error12);
+                System.out.println("The total security violation error occur in June: " + Error6);
+                System.out.println("The total security violation error occur in July: " + Error7);
+                System.out.println("The total security violation error occur in August: " + Error8);
+                System.out.println("The total security violation error occur in September: " + Error9);
+                System.out.println("The total security violation error occur in October: " + Error10);
+                System.out.println("The total security violation error occur in November: " + Error11);
+                System.out.println("The total security violation error occur in December: " + Error12);
 
                 AnalysisError obj = new AnalysisError(Error6,Error7,Error8,Error9,Error10,Error11,Error12);
                 obj.Max();      
                 obj.Min();
                 obj.Average();
+                String title = "Security Violation Error";
+                    String [] columns = {"Month", "Number of Error"};
+                    Object data[][] = {{"June", Error6 },
+                                       {"July", Error7},
+                                       {"August",Error8},
+                                       {"September", Error9},
+                                       {"October", Error10},
+                                       {"November", Error11},
+                                       {"December", Error12}
+                                       };
+                    Table tb = new Table(title, columns,data);
         } catch (FileNotFoundException ex) {
             System.out.println("Error: " + ex);
         }
