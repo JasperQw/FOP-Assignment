@@ -1,16 +1,19 @@
+import Data.Table;
 import java.util.Scanner;
 import java.io.*;
 public class InvalidError {
     public static void main(String[] args) {
         String keywords1 = "Invalid";
         String keywords2 = "qos";
+        String keywords3 = "slurm";
+        String keywords4 = "submit";
         int totalError = 0;
         try {
             Scanner sc = new Scanner(new FileInputStream("C:\\Users\\ProUser\\Downloads\\extracted_log"));
             PrintWriter pw = new PrintWriter(new FileOutputStream("InvalidErrorNew.txt"));
             while(sc.hasNextLine()){
                 String read = sc.nextLine();
-                    if(read.indexOf(keywords1) >= 0 && read.indexOf(keywords2) >= 0){
+                    if(read.indexOf(keywords1) >= 0 && read.indexOf(keywords2) >= 0 && read.indexOf(keywords3) >= 0 && read.indexOf(keywords4) >= 0){
                         pw.println(read);
                         totalError += 1;
                     }       
@@ -63,10 +66,22 @@ public class InvalidError {
                 obj.Max();      
                 obj.Min();
                 obj.Average();
+                String title = "Invalid Qos Error";
+                    String [] columns = {"Month", "Number of Error"};
+                    Object data[][] = {{"June", Error6 },
+                                       {"July", Error7},
+                                       {"August",Error8},
+                                       {"September", Error9},
+                                       {"October", Error10},
+                                       {"November", Error11},
+                                       {"December", Error12}
+                                       };
+                    Table tb = new Table(title, columns,data);
         } catch (FileNotFoundException ex) {
             System.out.println("Error: " + ex);
         }
-        
+       
+       
     }
    
 }
