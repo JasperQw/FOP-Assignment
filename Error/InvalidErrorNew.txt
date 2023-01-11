@@ -8,7 +8,6 @@
 [2022-06-01T15:14:48.874] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-06-01T15:16:04.455] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-06-01T15:17:06.753] _slurm_rpc_submit_batch_job: Invalid qos specification
-[2022-06-01T15:23:47.319] error: Invalid qos (sharp)
 [2022-06-01T15:23:47.319] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-06-01T15:27:07.017] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-06-01T15:28:54.640] _slurm_rpc_submit_batch_job: Invalid qos specification
@@ -30,19 +29,14 @@
 [2022-06-10T17:11:37.090] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-06-10T17:19:34.455] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-06-10T19:08:30.272] _slurm_rpc_submit_batch_job: Invalid qos specification
-[2022-06-10T19:21:32.833] error: Invalid qos (normal*)
 [2022-06-10T19:21:32.833] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-06-17T16:32:03.523] _slurm_rpc_submit_batch_job: Invalid qos specification
-[2022-06-17T16:33:43.440] error: Invalid qos (normal*)
 [2022-06-17T16:33:43.440] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-06-17T21:46:42.811] _slurm_rpc_submit_batch_job: Invalid qos specification
-[2022-06-17T21:47:08.834] error: Invalid qos (normal*)
 [2022-06-17T21:47:08.834] _slurm_rpc_submit_batch_job: Invalid qos specification
-[2022-06-17T21:48:05.273] error: Invalid qos (normal*)
 [2022-06-17T21:48:05.273] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-06-18T12:20:46.849] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-06-18T12:33:05.068] _slurm_rpc_submit_batch_job: Invalid qos specification
-[2022-06-20T17:30:28.036] _slurm_rpc_allocate_resources: Invalid qos specification 
 [2022-06-25T17:28:03.881] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-06-25T17:39:04.726] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-06-25T17:40:02.475] _slurm_rpc_submit_batch_job: Invalid qos specification
@@ -59,7 +53,6 @@
 [2022-08-13T14:30:14.749] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-08-13T14:44:59.131] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-08-14T07:56:26.519] _slurm_rpc_submit_batch_job: Invalid qos specification
-[2022-08-15T08:39:17.056] error: Invalid qos (quick)
 [2022-08-15T08:39:17.056] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-08-15T23:52:18.083] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-08-15T23:53:52.873] _slurm_rpc_submit_batch_job: Invalid qos specification
@@ -89,7 +82,6 @@
 [2022-08-26T00:24:35.855] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-08-26T00:29:45.524] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-08-26T00:31:11.127] _slurm_rpc_submit_batch_job: Invalid qos specification
-[2022-08-26T00:31:36.791] error: Invalid qos (normal*)
 [2022-08-26T00:31:36.791] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-08-26T00:31:46.974] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-08-26T00:38:15.580] _slurm_rpc_submit_batch_job: Invalid qos specification
@@ -97,7 +89,6 @@
 [2022-08-26T01:04:11.057] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-08-26T01:05:21.836] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-08-26T01:14:40.340] _slurm_rpc_submit_batch_job: Invalid qos specification
-[2022-08-26T01:15:32.437] error: Invalid qos (qos)
 [2022-08-26T01:15:32.437] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-08-26T01:18:09.714] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-08-26T01:18:45.483] _slurm_rpc_submit_batch_job: Invalid qos specification
@@ -110,11 +101,8 @@
 [2022-08-26T09:49:26.278] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-09-05T12:18:15.836] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-09-05T12:18:55.798] _slurm_rpc_submit_batch_job: Invalid qos specification
-[2022-09-05T12:23:04.951] error: Invalid qos (general-compute)
 [2022-09-05T12:23:04.951] _slurm_rpc_submit_batch_job: Invalid qos specification
-[2022-09-05T12:25:03.955] error: Invalid qos (cpu-epyc)
 [2022-09-05T12:25:03.955] _slurm_rpc_submit_batch_job: Invalid qos specification
-[2022-09-05T12:27:06.647] error: Invalid qos (normal*)
 [2022-09-05T12:27:06.647] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-09-05T12:28:15.502] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-09-05T12:33:15.973] _slurm_rpc_submit_batch_job: Invalid qos specification
@@ -128,10 +116,6 @@
 [2022-10-06T16:47:22.488] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-10-25T00:22:27.618] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-10-25T00:22:36.242] _slurm_rpc_submit_batch_job: Invalid qos specification
-[2022-11-04T09:33:22.247] _slurm_rpc_allocate_resources: Invalid qos specification 
-[2022-11-04T12:13:02.896] _slurm_rpc_allocate_resources: Invalid qos specification 
-[2022-11-04T12:14:03.240] _slurm_rpc_allocate_resources: Invalid qos specification 
-[2022-11-04T12:14:13.021] _slurm_rpc_allocate_resources: Invalid qos specification 
 [2022-11-08T00:02:30.299] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-11-08T00:03:11.386] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-11-08T00:03:48.988] _slurm_rpc_submit_batch_job: Invalid qos specification
@@ -161,11 +145,8 @@
 [2022-11-08T20:55:20.936] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-11-09T11:15:40.044] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-11-09T15:50:54.812] _slurm_rpc_submit_batch_job: Invalid qos specification
-[2022-11-09T15:52:27.274] error: Invalid qos (normal*)
 [2022-11-09T15:52:27.274] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-11-14T20:29:49.293] _slurm_rpc_submit_batch_job: Invalid qos specification
 [2022-11-14T21:02:31.423] _slurm_rpc_submit_batch_job: Invalid qos specification
-[2022-12-06T13:40:42.571] error: Invalid qos (long;--job-name=JupLab)
 [2022-12-06T13:40:42.571] _slurm_rpc_submit_batch_job: Invalid qos specification
-[2022-12-06T13:41:03.056] error: Invalid qos (long,--job-name=Jup)
 [2022-12-06T13:41:03.057] _slurm_rpc_submit_batch_job: Invalid qos specification

@@ -1,0 +1,63 @@
+public class leftover {
+    //for months timefromAllocateToDone
+    public static void timefromAllocateToDoneSpecificMonth(String month)throws Exception{
+
+        Scanner xx= new Scanner(new FileInputStream("simplified3importantAND.txt"));
+        PrintWriter yy= new PrintWriter(new FileOutputStream("timefromAllocateToDoneByMonths"+month+".txt"));
+        
+        ArrayList<String> timeforallocatex= new ArrayList<String>();
+        ArrayList<String> timeforcompletex= new ArrayList<String>();
+        ArrayList<String> jobidx=new ArrayList<String>();
+        
+        //find for overall execution time
+        while(xx.hasNextLine()){
+            String currentline=xx.nextLine();
+            
+                if(currentline.contains("allocated")){
+                    timeforallocatex.add(currentline.substring(23));
+                    jobidx.add(currentline.substring(0,12));
+                
+                }
+                else if(currentline.contains("completed")){
+                    timeforcompletex.add(currentline.substring(23));
+                }
+            
+        }
+
+
+        //Calculate time difference from submit to complete (overall)
+        //System.out.println("========================================================================================");
+        yy.println("========================================================================================");
+        //System.out.println("@@@@@[The time difference from allocation to completion for month "+ month+ " are]@@@@@: ");
+        yy.println("@@@@@[The time difference from allocation to completion for month "+ month+ " are]@@@@@: ");
+        
+        for(int i=0;i<jobidx.size();i++){
+            String current=timeforallocatex.get(i);
+            String next=timeforcompletex.get(i);
+            String id=jobidx.get(i);
+            //System.out.println("_____________________________________________________________________________________");
+            yy.println("_____________________________________________________________________________________");
+            //System.out.println("The [*time difference*] from allocation to completion for [["+id+"]] is: ");
+            yy.println("The [*time difference*] from allocation to completion for [["+id+"]] is: ");
+            //System.out.println("_____________________________________________________________________________________");
+            yy.println("_____________________________________________________________________________________");
+            //findforconsole(current, next);
+            findforprintwriter(current, next);
+            yy.print(cc.get(i));    
+        }
+        
+        //System.out.println();
+        yy.println();
+        cc.clear();
+        //System.out.println("========================================================================================");
+        timeforallocatex.clear();
+        timeforcompletex.clear();
+        jobidx.clear();
+        yy.close();
+        xx.close();
+
+        
+     
+    }
+
+}
