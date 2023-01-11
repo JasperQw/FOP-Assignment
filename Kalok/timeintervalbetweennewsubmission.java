@@ -6,7 +6,7 @@ public class timeintervalbetweennewsubmission extends timecalculator {
 
     public static void main(String[] args)throws Exception{
         //Print result into txt file
-        PrintWriter aa=new PrintWriter(new FileOutputStream("timeintervalbetweennewsubmission.txt",true));
+        PrintWriter aa=new PrintWriter(new FileOutputStream("timeintervalbetweennewsubmission.txt"));
         
         Scanner xx=new Scanner(new FileInputStream("simplified3importantall.txt"));
         ArrayList<String> month6= new ArrayList<String>();
@@ -16,24 +16,46 @@ public class timeintervalbetweennewsubmission extends timecalculator {
         ArrayList<String> month10= new ArrayList<String>();
         ArrayList<String> month11= new ArrayList<String>();
         ArrayList<String> month12= new ArrayList<String>();
+        ArrayList<String> jobid6=new ArrayList<String>();
+        ArrayList<String> jobid7=new ArrayList<String>();
+        ArrayList<String> jobid8=new ArrayList<String>();
+        ArrayList<String> jobid9=new ArrayList<String>();
+        ArrayList<String> jobid10=new ArrayList<String>();
+        ArrayList<String> jobid11=new ArrayList<String>();
+        ArrayList<String> jobid12=new ArrayList<String>();
         
         while(xx.hasNextLine()){
             String currentline= xx.nextLine();
-                if(currentline.substring(12).contains("submitted")&&currentline.substring(29,31).contains("06"))
+                if(currentline.substring(12).contains("submitted")&&currentline.substring(29,31).contains("06")){
                     month6.add(currentline.substring(23));
-                else if(currentline.substring(12).contains("submitted")&&currentline.substring(29,31).contains("07"))
-                    month7.add(currentline.substring(23));
-                else if(currentline.substring(12).contains("submitted")&&currentline.substring(29,31).contains("08"))
-                    month8.add(currentline.substring(23));
-                else if(currentline.substring(12).contains("submitted")&&currentline.substring(29,31).contains("09"))
-                    month9.add(currentline.substring(23));
-                else if(currentline.substring(12).contains("submitted")&&currentline.substring(29,31).contains("10"))
-                    month10.add(currentline.substring(23));
-                else if(currentline.substring(12).contains("submitted")&&currentline.substring(29,31).contains("11"))
-                    month11.add(currentline.substring(23));
-                else if(currentline.substring(12).contains("submitted")&&currentline.substring(29,31).contains("12"))
-                    month12.add(currentline.substring(23));
+                    jobid6.add(currentline.substring(0,12));
                 }
+                else if(currentline.substring(12).contains("submitted")&&currentline.substring(29,31).contains("07")){
+                    month7.add(currentline.substring(23));
+                    jobid7.add(currentline.substring(0,12));
+                }
+                else if(currentline.substring(12).contains("submitted")&&currentline.substring(29,31).contains("08")){
+                    month8.add(currentline.substring(23));
+                    jobid8.add(currentline.substring(0,12));
+                }
+                else if(currentline.substring(12).contains("submitted")&&currentline.substring(29,31).contains("09")){
+                    month9.add(currentline.substring(23));
+                    jobid9.add(currentline.substring(0,12));
+                }
+                else if(currentline.substring(12).contains("submitted")&&currentline.substring(29,31).contains("10")){
+                    month10.add(currentline.substring(23));
+                    jobid10.add(currentline.substring(0,12));
+                }
+                else if(currentline.substring(12).contains("submitted")&&currentline.substring(29,31).contains("11")){
+                    month11.add(currentline.substring(23));
+                    jobid11.add(currentline.substring(0,12));
+                }
+                else if(currentline.substring(12).contains("submitted")&&currentline.substring(29,31).contains("12")){
+                    month12.add(currentline.substring(23));
+                    jobid12.add(currentline.substring(0,12));
+                }
+
+        }
         
         xx.close();
 
@@ -48,17 +70,15 @@ public class timeintervalbetweennewsubmission extends timecalculator {
             String next=month6.get(i+1);
             System.out.println("_____________________________________________________________________________________");
             aa.println("_____________________________________________________________________________________");
-            System.out.println("The [*time difference*] from submission [["+ (i+1)+"]] to submission [["+(i+2)+"]] is: ");
-            aa.println("The [*time difference*] from submission [["+ (i+1)+"]] to submission [["+(i+2)+"]] is: ");
+            System.out.println("The [*time difference*] from submission [["+(jobid6.get(i))+"]] to submission [["+(jobid6.get(i+1))+"]] is: ");
+            aa.println("The [*time difference*] from submission [["+ (jobid6.get(i))+"]] to submission [["+(jobid6.get(i+1))+"]] is: ");
             System.out.println("_____________________________________________________________________________________");
             aa.println("_____________________________________________________________________________________");
             findforconsole(current, next);
             findforprintwriter(current, next);
-            aa.print(cc.get(i));
-            
-            
-            
+            aa.print(cc.get(i));    
         }
+        
         System.out.println();
         aa.println();
         cc.clear();
@@ -75,8 +95,8 @@ public class timeintervalbetweennewsubmission extends timecalculator {
             String next=month7.get(i+1);
             System.out.println("_____________________________________________________________________________________");
             aa.println("_____________________________________________________________________________________");
-            System.out.println("The [*time difference*] from submission [["+ (i+1)+"]] to submission [["+(i+2)+"]] is: ");
-            aa.println("The [*time difference*] from submission [["+ (i+1)+"]] to submission [["+(i+2)+"]] is: ");
+            System.out.println("The [*time difference*] from submission [["+ (jobid7.get(i))+"]] to submission [["+(jobid7.get(i+1))+"]] is: ");
+            aa.println("The [*time difference*] from submission [["+ (jobid7.get(i))+"]] to submission [["+(jobid7.get(i+1))+"]] is: ");
             System.out.println("_____________________________________________________________________________________");
             aa.println("_____________________________________________________________________________________");
             findforconsole(current,next);
@@ -101,8 +121,8 @@ public class timeintervalbetweennewsubmission extends timecalculator {
             String next=month8.get(i+1);
             System.out.println("_____________________________________________________________________________________");
             aa.println("_____________________________________________________________________________________");
-            System.out.println("The [*time difference*] from submission [["+ (i+1)+"]] to submission [["+(i+2)+"]] is: ");
-            aa.println("The [*time difference*] from submission [["+ (i+1)+"]] to submission [["+(i+2)+"]] is: ");
+            System.out.println("The [*time difference*] from submission [["+ (jobid8.get(i))+"]] to submission [["+(jobid8.get(i+1))+"]] is: ");
+            aa.println("The [*time difference*] from submission [["+ (jobid8.get(i))+"]] to submission [["+(jobid8.get(i+1))+"]] is: ");
             System.out.println("_____________________________________________________________________________________");
             aa.println("_____________________________________________________________________________________");
             findforconsole(current,next);
@@ -129,16 +149,13 @@ public class timeintervalbetweennewsubmission extends timecalculator {
             String next=month9.get(i+1);
             System.out.println("_____________________________________________________________________________________");
             aa.println("_____________________________________________________________________________________");
-            System.out.println("The [*time difference*] from submission [["+ (i+1)+"]] to submission [["+(i+2)+"]] is: ");
-            aa.println("The [*time difference*] from submission [["+ (i+1)+"]] to submission [["+(i+2)+"]] is: ");
+            System.out.println("The [*time difference*] from submission [["+ (jobid9.get(i))+"]] to submission [["+(jobid9.get(i+1))+"]] is: ");
+            aa.println("The [*time difference*] from submission [["+ (jobid9.get(i))+"]] to submission [["+(jobid9.get(i+1))+"]] is: ");
             System.out.println("_____________________________________________________________________________________");
             aa.println("_____________________________________________________________________________________");
             findforconsole(current,next);
             findforprintwriter(current, next);
-            aa.print(cc.get(i));
-
-
-            
+            aa.print(cc.get(i));  
         }
         cc.clear();
         System.out.println();
@@ -157,8 +174,8 @@ public class timeintervalbetweennewsubmission extends timecalculator {
             String next=month10.get(i+1);
             System.out.println("_____________________________________________________________________________________");
             aa.println("_____________________________________________________________________________________");
-            System.out.println("The [*time difference*] from submission [["+ (i+1)+"]] to submission [["+(i+2)+"]] is: ");
-            aa.println("The [*time difference*] from submission [["+ (i+1)+"]] to submission [["+(i+2)+"]] is: ");
+            System.out.println("The [*time difference*] from submission [["+ (jobid10.get(i))+"]] to submission [["+(jobid10.get(i+1))+"]] is: ");
+            aa.println("The [*time difference*] from submission [["+ (jobid10.get(i))+"]] to submission [["+(jobid10.get(i+1))+"]] is: ");
             System.out.println("_____________________________________________________________________________________");
             aa.println("_____________________________________________________________________________________");
             findforconsole(current,next);
@@ -185,8 +202,8 @@ public class timeintervalbetweennewsubmission extends timecalculator {
             String next=month11.get(i+1);
             System.out.println("_____________________________________________________________________________________");
             aa.println("_____________________________________________________________________________________");
-            System.out.println("The [*time difference*] from submission [["+ (i+1)+"]] to submission [["+(i+2)+"]] is: ");
-            aa.println("The [*time difference*] from submission [["+ (i+1)+"]] to submission [["+(i+2)+"]] is: ");
+            System.out.println("The [*time difference*] from submission [["+ (jobid11.get(i))+"]] to submission [["+(jobid11.get(i+1))+"]] is: ");
+            aa.println("The [*time difference*] from submission [["+ (jobid11.get(i))+"]] to submission [["+(jobid11.get(i+1))+"]] is: ");
             System.out.println("_____________________________________________________________________________________");
             aa.println("_____________________________________________________________________________________");
             findforconsole(current,next);
@@ -213,8 +230,8 @@ public class timeintervalbetweennewsubmission extends timecalculator {
             String next=month12.get(i+1);
             System.out.println("_____________________________________________________________________________________");
             aa.println("_____________________________________________________________________________________");
-            System.out.println("The [*time difference*] from submission [["+ (i+1)+"]] to submission [["+(i+2)+"]] is: ");
-            aa.println("The [*time difference*] from submission [["+ (i+1)+"]] to submission [["+(i+2)+"]] is: ");
+            System.out.println("The [*time difference*] from submission [["+ (jobid12.get(i))+"]] to submission [["+(jobid12.get(i+1))+"]] is: ");
+            aa.println("The [*time difference*] from submission [["+ (jobid12.get(i))+"]] to submission [["+(jobid12.get(i+1))+"]] is: ");
             System.out.println("_____________________________________________________________________________________");
             aa.println("_____________________________________________________________________________________");
             findforconsole(current,next);

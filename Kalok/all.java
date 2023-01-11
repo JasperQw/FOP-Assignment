@@ -9,7 +9,7 @@ public class all {
         
          
         
-        PrintWriter dd=new PrintWriter(new FileOutputStream("jobssubmitted&allocated&completedfull.txt",true));
+        PrintWriter dd=new PrintWriter(new FileOutputStream("jobssubmitted&allocated&completedfull.txt"));
         Scanner xx=new Scanner(new FileInputStream("extracted_log"));
         ArrayList<String> all= new ArrayList<String>();
  
