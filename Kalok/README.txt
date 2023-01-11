@@ -15,7 +15,7 @@
 ->read from simplified3impotantAND.txt
 ->find the time from Submit to Completion for each Job ID.
 ->print into timefromSubmitToDoneOverall.txt
-->ALSO find the average execution time from Submit to Allocation by Overall (printed in console)
+->ALSO find the average execution time from Submit to Allocation by Overall in every format (printed in console)
 
 
 //
@@ -23,7 +23,7 @@
 ->read from simplified3importantAND.txt
 ->find the time from Submit to Completion for each Job ID.
 ->print into timefromSubmitToDoneOverall.txt
-->ALSO find the average execution time from Submit to Completion by Overall. (printed in console)
+->ALSO find the average execution time from Submit to Completion by Overall.in every format (printed in console)
 
 
 @@@
@@ -33,7 +33,7 @@
 ->read from AllocateToCompleteAND.txt
 ->find the time from Allocate to Completion for each Job ID.
 ->print into timefromAllocateToDoneOverall.txt
-->ALSO find the average execution time from Allocate to Completion by Overall. (printed in console)
+->ALSO find the average execution time from Allocate to Completion by Overall.in every format (printed in console)
 
 
 //
@@ -88,4 +88,5 @@
 -> simplified version of 11.jobssubmitted&allocated&completedfull.txt, where consist of JobId and numbers of allocate AND completed AND submitted
 
 //
-14. 
+14. AllocateToCompleteAND.txt
+->only consist JobID that have allocate and completed in the log file;
