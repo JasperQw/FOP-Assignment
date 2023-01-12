@@ -33,7 +33,12 @@ public class all {
     
         requirement1="";
 
-        xx.close();   
+        xx.close();
+        System.out.println("The file has been scanned successfully!");  
+        System.out.println("Lines containing keywords: \n@@@ _job_complete........done @@@ \n@@@ Allocate JobId=...... @@@ \n@@@ _slurm_rpc_submit_batch_job: JobId @@@");   
+        System.out.println("have been printed successfully onto ---> [ jobssubmitted&allocated&completedfull.txt ]");   
+        System.out.println();
+        System.out.println("Total of lines containing the keywords: ["+all.size()+"]");
     } 
 }
 
