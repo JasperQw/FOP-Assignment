@@ -4,7 +4,6 @@ import java.util.*;
 public class sorting {
     static int counter = 0;
     public static void main(String[] args)throws Exception{
-
         sort(6);
         sort(7);
         sort(8);
