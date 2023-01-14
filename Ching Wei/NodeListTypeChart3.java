@@ -24,7 +24,7 @@ public class NodeListTypeChart3 extends JPanel
         setBorder( new EmptyBorder(10, 10, 10, 10) );
         setLayout( new BorderLayout() );
 
-        JLabel titleLabel = new JLabel("Number of Each Type of Partiton Being Used");
+        JLabel titleLabel = new JLabel("Number of Each Type of Nodelist Being Used");
         titleLabel.setHorizontalAlignment(JLabel.CENTER);
         add(titleLabel, BorderLayout.PAGE_START);
 

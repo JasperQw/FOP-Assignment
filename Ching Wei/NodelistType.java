@@ -4,10 +4,10 @@ import javax.swing.*;
 import javax.swing.table.*;
 import java.awt.*;
 
-public class NodelistType2  {
+public class NodelistType  {
     
     public static void main(String [] args) throws FileNotFoundException {
-        Scanner reader = new Scanner(new FileReader("allocatedJobs.txt"));
+        Scanner reader = new Scanner(new FileReader("jobsallocatedfull.txt"));
         ArrayList<String> TypeofNode = new ArrayList<>();
         ArrayList<Integer> TypeofNodeCount = new ArrayList<>();
 
@@ -96,7 +96,7 @@ public class NodelistType2  {
 
     public static int NodeCount(String TypeofNode, char month, boolean countAll) throws FileNotFoundException {
         
-        Scanner read = new Scanner(new FileReader("allocatedJobs.txt"));
+        Scanner read = new Scanner(new FileReader("jobsallocatedfull.txt"));
         int counting = 0;
 
         if (countAll == false) {

@@ -6,7 +6,7 @@ import java.awt.*;
 
 public class CPUsCount  {
     public static void main(String [] args) throws FileNotFoundException {
-        Scanner reader = new Scanner(new FileReader("allocatedJobs.txt"));
+        Scanner reader = new Scanner(new FileReader("jobsallocatedfull.txt"));
         ArrayList<String> TypeofCPUs = new ArrayList<>();
         ArrayList<Integer> TypeofCPUs_count = new ArrayList<>();
 
@@ -82,10 +82,10 @@ public class CPUsCount  {
             jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             jframe.setVisible(true);
             jframe.add(new JScrollPane(jtable));
-            jframe.setTitle("Number of Jobs Completed per Month");
+            jframe.setTitle("Number of CPUs being used");
     
             //Table Title
-            JLabel title = new JLabel("Number of Jobs Completed per Month");
+            JLabel title = new JLabel("Number of CPUs being used");
             title.setFont(new Font("Times New Roman", Font.BOLD, 18));
             title.setForeground(Color.BLACK);
             title.setHorizontalAlignment(JLabel.CENTER);
@@ -96,7 +96,7 @@ public class CPUsCount  {
 
     public static int NodeCount(String TypeofCPUs, char month, boolean countAll) throws FileNotFoundException {
         
-        Scanner read = new Scanner(new FileReader("allocatedJobs.txt"));
+        Scanner read = new Scanner(new FileReader("jobsallocatedfull.txt"));
         int counting = 0;
 
         if (countAll == false) {
