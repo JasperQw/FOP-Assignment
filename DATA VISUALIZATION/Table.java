@@ -8,11 +8,10 @@ public class Table {
         public Table(String title,String[]columns,Object[][]data){
             fr = new JFrame(title);
             jt = new JTable(data,columns);
-            jt.setBounds(30, 40, 200, 300);
+            jt.setBounds(30, 40, 150, 300);
             JScrollPane jsp = new JScrollPane(jt);
             fr.add(jsp);
-            fr.setSize(500, 200);
+            fr.setSize(600, 800);
             fr.setVisible(true);
-        } 
-       
+        }   
 }
