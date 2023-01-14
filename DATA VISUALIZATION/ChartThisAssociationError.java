@@ -8,7 +8,7 @@ import javafx.scene.chart.CategoryAxis;
 import javafx.stage.Stage;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
-public class Chart extends Application {
+public class ChartThisAssociationError extends Application {
    public void start(Stage stage) {                 
       CategoryAxis xAxis = new CategoryAxis();  
       xAxis.setCategories(FXCollections.<String>
@@ -44,4 +44,3 @@ public class Chart extends Application {
       launch(args);
    }
 }
-
