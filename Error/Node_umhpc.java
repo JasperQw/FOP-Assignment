@@ -57,7 +57,7 @@ public class Node_umhpc {
                     System.out.println("Nodes umhpc error occurs in December: "+Dec);
                     
                     if(count!=0){
-                        System.out.println("\nTotal Nodes umhpc error in the log file: "+count);
+                        System.out.println("\nTotal number of Nodes umhpc error in the log file: "+count);
                     }
                     
                     AnalysisError calc = new AnalysisError(June, July, Aug, Sep, Oct, Nov, Dec);
