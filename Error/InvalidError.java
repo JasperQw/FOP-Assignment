@@ -10,7 +10,7 @@ public class InvalidError {
         int totalError = 0;
         //read the log file and write the line that contain the keyword into a txt.file
         Scanner sc = new Scanner(new FileInputStream("C:\\Users\\ProUser\\Downloads\\extracted_log"));
-        PrintWriter pw = new PrintWriter(new FileOutputStream("InvalidErrorNew.txt"));
+        PrintWriter pw = new PrintWriter(new FileOutputStream("InvalidError.txt"));
             while(sc.hasNextLine()){
                 String read = sc.nextLine();
                     if(read.indexOf(keywords1) >= 0 && read.indexOf(keywords2) >= 0 && read.indexOf(keywords3) >= 0 && read.indexOf(keywords4) >= 0){
@@ -24,7 +24,7 @@ public class InvalidError {
 
             //find the error occur in each month
             char ch = ' ';         
-            Scanner input = new Scanner(new FileInputStream("InvalidErrorNew.txt"));
+            Scanner input = new Scanner(new FileInputStream("InvalidError.txt"));
             int Error6 = 0,Error7 = 0,Error8 = 0,Error9 = 0,Error10 = 0,Error11 = 0,Error12 = 0;
             while(input.hasNextLine()){
                 String read = input.nextLine();
