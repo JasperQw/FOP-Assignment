@@ -128,7 +128,7 @@ public class TheAssociationError {
                         System.out.println();
                         System.out.println("Month with the most This association error: "+calc.Max());
                         System.out.println("Month with the least This association error: "+calc.Min());
-                        System.out.printf("Average This association error in each month: %.2f",calc.Average(count));
+                        System.out.printf("Average number of This association error: %.2f",calc.Average(count));
                         
                     System.out.println();
                     System.out.println("\nThis association does not have access to qos long: "+qos[0]);
