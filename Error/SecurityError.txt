@@ -5,11 +5,7 @@
 [2022-07-12T00:57:49.711] error: Security violation, REQUEST_KILL_JOB RPC for JobId=45817 from uid 548300504
 [2022-07-12T00:58:48.479] error: Security violation, REQUEST_KILL_JOB RPC for JobId=46151 from uid 548300504
 [2022-07-27T23:01:37.684] error: Security violation, REQUEST_KILL_JOB RPC for JobId=46799 from uid 548200021
-[2022-08-11T20:14:17.551] error: SECURITY VIOLATION: Attempt to suspend job from user 548200045
 [2022-10-28T23:05:13.300] error: Security violation, REQUEST_KILL_JOB RPC for JobId=51753 from uid 548200021
 [2022-11-10T13:25:28.767] error: Security violation, REQUEST_KILL_JOB RPC for JobId=52223 from uid 548300621
-[2022-11-12T17:32:23.392] error: Security violation, JOB_UPDATE RPC from uid 548200121
-[2022-11-12T17:33:03.228] error: Security violation, JOB_UPDATE RPC from uid 548200121
-[2022-11-12T17:36:13.370] error: SECURITY VIOLATION: Attempt to suspend job from user 548200121
 [2022-11-22T11:25:18.853] error: Security violation, REQUEST_KILL_JOB RPC for JobId=52908 from uid 548300543
 [2022-11-22T11:25:57.809] error: Security violation, REQUEST_KILL_JOB RPC for JobId=52908 from uid 548300543
