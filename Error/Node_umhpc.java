@@ -62,9 +62,9 @@ public class Node_umhpc {
                     
                     AnalysisError calc = new AnalysisError(June, July, Aug, Sep, Oct, Nov, Dec);
                         System.out.println();
-                        System.out.println("Month with the most Node umphc error: "+calc.Max());
-                        System.out.println("Month with the least Node umphc error: "+calc.Min());
-                        System.out.printf("Average number of Node umphc error: %.2f",calc.Average(count));
+                        System.out.println("Month with the most Nodes umphc error: "+calc.Max());
+                        System.out.println("Month with the least Nodes umphc error: "+calc.Min());
+                        System.out.printf("Average number of Nodes umphc error: %.2f",calc.Average(count));
                         System.out.println();
                         
                     String title = "Nodes umphc Error";
