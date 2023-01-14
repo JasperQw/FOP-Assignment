@@ -122,7 +122,7 @@ public class TheAssociationError {
                     System.out.println("This association error occurs in December: "+Dec);
                     
                     if(count!=0){
-                        System.out.println("\nTotal This association error in the log file: "+count);
+                        System.out.println("\nTotal number of This association error in the log file: "+count);
                 
                     AnalysisError calc = new AnalysisError(June, July, Aug, Sep, Oct, Nov, Dec);
                         System.out.println();
