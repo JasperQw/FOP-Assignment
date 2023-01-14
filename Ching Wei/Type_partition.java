@@ -26,7 +26,9 @@ public class Type_partition {
         while(in.hasNextLine()) {
             String temp = in.nextLine();
             String [] array = temp.split(" ");
-            if(temp.charAt(7) == month && array.length == 7 && (array[6]).matches("Partition=.*") && list_partition_type.indexOf(array[6]) == -1) {
+            if(temp.charAt(7) == month && array.length == 7 && (array[6]).matches("Partition=.*") 
+                && list_partition_type.indexOf(array[6]) == -1) {
+                    
                 list_partition_type.add(array[6]);
         }
     }
