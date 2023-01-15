@@ -24,7 +24,7 @@ public class NodeListTypeChart extends JPanel
         setBorder( new EmptyBorder(10, 10, 10, 10) );
         setLayout( new BorderLayout() );
 
-        JLabel titleLabel = new JLabel("Number of Each Type of Nodelist Being Used");
+        JLabel titleLabel = new JLabel("Jobs Allocated to Each type of Node");
         titleLabel.setHorizontalAlignment(JLabel.CENTER);
         add(titleLabel, BorderLayout.PAGE_START);
 
@@ -143,7 +143,7 @@ public class NodeListTypeChart extends JPanel
 
     private static void createAndShowGUI()
     {
-        PartitionCountChart panel = new PartitionCountChart();
+        NodeListTypeChart panel = new NodeListTypeChart();
         
         panel.addHistogramColumn("cpu01", 971, Color.blue);
         panel.addHistogramColumn("cpu03", 675, Color.blue);
@@ -158,32 +158,6 @@ public class NodeListTypeChart extends JPanel
         panel.addHistogramColumn("cpu13", 668, Color.blue);
         panel.addHistogramColumn("cpu14", 436, Color.blue);
         panel.addHistogramColumn("cpu15", 584, Color.blue);
-        //panel.addHistogramColumn("cpu[01,03-04,09]", 1, Color.blue);
-        //panel.addHistogramColumn("cpu[01,03]", 3, Color.blue);
-        //panel.addHistogramColumn("cpu[01,04,09,11]", 3, Color.blue);
-        //panel.addHistogramColumn("cpu[01,04]", 5, Color.blue);
-        //panel.addHistogramColumn("cpu[01,09-11]", 1, Color.blue);
-        //panel.addHistogramColumn("cpu[03,07]", 10, Color.blue);
-        //panel.addHistogramColumn("cpu[03,09]", 23, Color.blue);
-        //panel.addHistogramColumn("cpu[03,11]", 1, Color.blue);
-        //panel.addHistogramColumn("cpu[03-04]", 4, Color.blue);
-        //panel.addHistogramColumn("cpu[04-05,07-08,11]", 1, Color.blue);
-        //panel.addHistogramColumn("cpu[04-05]", 1, Color.blue);
-        //panel.addHistogramColumn("cpu[07,11]", 4, Color.blue);
-        //panel.addHistogramColumn("cpu[07-08]", 1, Color.blue);
-        //panel.addHistogramColumn("cpu[08-09]", 3, Color.blue);
-        //panel.addHistogramColumn("cpu[08-11]", 1, Color.blue);
-        //panel.addHistogramColumn("cpu[09,11]", 1, Color.blue);
-        //panel.addHistogramColumn("cpu[09-10]", 27, Color.blue);
-        //panel.addHistogramColumn("cpu[10-11]", 10, Color.blue);
-        //panel.addHistogramColumn("cpu[12,14-15]", 2, Color.blue);
-        //panel.addHistogramColumn("cpu[12,15]", 1, Color.blue);
-        //panel.addHistogramColumn("cpu[12-13,15]", 4, Color.blue);
-        //panel.addHistogramColumn("cpu[12-13]", 163, Color.blue);
-        //panel.addHistogramColumn("cpu[12-15]", 101, Color.blue);
-        //panel.addHistogramColumn("cpu[13,15]", 2, Color.blue);
-        //panel.addHistogramColumn("cpu[13-14]", 4, Color.blue);
-        //panel.addHistogramColumn("cpu[14-15]", 3, Color.blue);
         panel.addHistogramColumn("gpu01", 222, Color.blue);
         panel.addHistogramColumn("gpu02", 640, Color.blue);
         panel.addHistogramColumn("gpu03", 206, Color.blue);

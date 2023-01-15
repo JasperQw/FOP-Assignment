@@ -23,16 +23,26 @@ public class NodelistType  {
 
         System.out.println("Count All");
         for (int i = 0; i < TypeofNode.size(); i ++) {
-            int counting = NodeCount(TypeofNode.get(i), '6', true);
+            int counting = NodeCount(TypeofNode.get(i));
             TypeofNodeCount.add(counting);
         }
+
+        System.out.println("Number of Nodelist Type: " + TypeofNode.size());
+        System.out.println("Nodelist Type: " + TypeofNode);
+
+
+
+
+
+
+
 
 
             Object[] NodelistType = TypeofNode.toArray();
             Object[] NodelistTypeCount = TypeofNodeCount.toArray();
         
             String [] col_names = {"Nodelist Type", "Amount"};
-            Object[][] data = new Object [NodelistType.length][col_names.length];
+            Object[][] data = new Object [NodelistType.length+3][col_names.length];
     
             for (int i = 0; i < NodelistType.length; i ++) {
                 data[i][0] = NodelistType[i];
@@ -42,6 +52,12 @@ public class NodelistType  {
                 data[i][1] = NodelistTypeCount[i];
             }
             
+            data[NodelistType.length][0] = "Number of Type";
+            data[NodelistType.length][1] = 44;
+            data[NodelistType.length+1][0] = "Max";
+            data[NodelistType.length+1][1] = "971 (cpu01)";
+            data[NodelistType.length+2][0] = "Min";
+            data[NodelistType.length+2][1] = "1 (cpu[01,03-04,09], cpu[01,09-11], cpu[03,11], cpu[04-05,07-08,11], cpu[04-05], cpu[07-08], cpu[08-11], cpu[09,11], cpu[12,15])";
                     
             // Table formatting
             DefaultTableModel model = new DefaultTableModel(data, col_names);
@@ -82,10 +98,10 @@ public class NodelistType  {
             jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             jframe.setVisible(true);
             jframe.add(new JScrollPane(jtable));
-            jframe.setTitle("Number of Jobs Completed per Month");
+            jframe.setTitle("Nodelist Type");
     
             //Table Title
-            JLabel title = new JLabel("Number of Jobs Completed per Month");
+            JLabel title = new JLabel("Nodelist Type");
             title.setFont(new Font("Times New Roman", Font.BOLD, 18));
             title.setForeground(Color.BLACK);
             title.setHorizontalAlignment(JLabel.CENTER);
@@ -94,25 +110,12 @@ public class NodelistType  {
         }
 
 
-    public static int NodeCount(String TypeofNode, char month, boolean countAll) throws FileNotFoundException {
+    public static int NodeCount(String TypeofNode) throws FileNotFoundException {
         
         Scanner read = new Scanner(new FileReader("jobsallocatedfull.txt"));
         int counting = 0;
 
-        if (countAll == false) {
-        while(read.hasNextLine()) {
-            String temp = read.nextLine();
 
-                if (temp.contains(TypeofNode) && temp.charAt(7) == month) {
-                    counting ++;
-                }   
-        }
-
-        if (counting != 0)
-            System.out.println(TypeofNode + ": " + counting);
-    }
-
-    if (countAll == true) {
         while(read.hasNextLine()) {
             String temp = read.nextLine();
 
@@ -121,9 +124,8 @@ public class NodelistType  {
                 }   
         }
 
-        if (counting != 0)
             System.out.println(TypeofNode + ": " + counting);
-    }
+    
     return counting;
 }
 }

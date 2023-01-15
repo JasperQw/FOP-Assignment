@@ -6,14 +6,14 @@ public class PartitionCountTable {
 
     public static void main(String[] args) {
         
-        String [] col_names = {"Partition Type", "June", "July", "August", "September", "October", "November", "December", "Sum"};
+        String [] col_names = {"Partition Type", "June", "July", "August", "September", "October", "November", "December", "Sum", "Max", "Min", "Max/Min among Type"};
  
-        Object [] row1 = {"CPU-EPYC", 612, 481, 573, 233, 441, 258, 158, 2756};
-        Object [] row2 = {"CPU-OPTERON", 961, 561, 489, 808, 990, 452, 248, 4509};
-        Object [] row3 = {"GPU-K10", 115, 63, 62, 62, 78, 35, 13, 428};
-        Object [] row4 = {"GPU-K40C", 67, 35, 18, 51, 19, 68, 37, 295};
-        Object [] row5 = {"GPU-TITAN", 212, 89, 82, 69, 75, 55, 58, 640};
-        Object [] row6 = {"GPU-V100S", 224, 75, 8, 30, 175, 39, 37, 588};
+        Object [] row1 = {"CPU-EPYC", 612, 481, 573, 233, 441, 258, 158, 2756, "June", "December"};
+        Object [] row2 = {"CPU-OPTERON", 961, 561, 489, 808, 990, 452, 248, 4509, "October", "December", "Max"};
+        Object [] row3 = {"GPU-K10", 115, 63, 62, 62, 78, 35, 13, 428, "June", "December"};
+        Object [] row4 = {"GPU-K40C", 67, 35, 18, 51, 19, 68, 37, 295, "November", "August", "Min"};
+        Object [] row5 = {"GPU-TITAN", 212, 89, 82, 69, 75, 55, 58, 640, "June", "November"};
+        Object [] row6 = {"GPU-V100S", 224, 75, 8, 30, 175, 39, 37, 588, "June", "August"};
         
         Object [][] data = {row1, row2, row3, row4, row5, row6};
                 

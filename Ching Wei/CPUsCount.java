@@ -19,29 +19,43 @@ public class CPUsCount  {
             }
         }
         Collections.sort(TypeofCPUs);
-        System.out.println(TypeofCPUs);
 
         System.out.println("Count All");
         for (int i = 0; i < TypeofCPUs.size(); i ++) {
-            int count = NodeCount(TypeofCPUs.get(i), '6', true);
+            int count = CPUsCounting(TypeofCPUs.get(i));
             TypeofCPUs_count.add(count);
         }
-        System.out.println(TypeofCPUs);
-        System.out.println(TypeofCPUs_count);
+        System.out.println("Number of CPUs type: " + TypeofCPUs.size());
+        System.out.println("Type of CPUs: " + TypeofCPUs);
+
+
+
+
+
+
+
+
         Object [] type_CPUs = TypeofCPUs.toArray();
         Object [] CPUs_count = TypeofCPUs_count.toArray();
 
-        String [] col_names = {"Nodelist Type", "Amount"};
-            Object[][] data = new Object [type_CPUs.length][col_names.length];
+        String [] col_names = {"CPUs Type", "Amount"};
+            Object[][] data = new Object [type_CPUs.length+3][col_names.length];
     
             for (int i = 0; i < type_CPUs.length; i ++) {
                 data[i][0] = type_CPUs[i];
             }
+
     
             for (int i = 0; i < CPUs_count.length; i ++) {
                 data[i][1] = CPUs_count[i];
             }
             
+            data[type_CPUs.length][0] = "Number of Type";
+            data[type_CPUs.length][1] = 34;
+            data[type_CPUs.length+1][0] = "Max";
+            data[type_CPUs.length+1][1] = "2325 (#CPUs=16)";
+            data[type_CPUs.length+2][0] = "Min";
+            data[type_CPUs.length+2][1] = "1 (#CPUs=34, #CPUs=45, #CPUs=128)";
                     
             // Table formatting
             DefaultTableModel model = new DefaultTableModel(data, col_names);
@@ -94,25 +108,11 @@ public class CPUsCount  {
 
     }
 
-    public static int NodeCount(String TypeofCPUs, char month, boolean countAll) throws FileNotFoundException {
+    public static int CPUsCounting(String TypeofCPUs) throws FileNotFoundException {
         
         Scanner read = new Scanner(new FileReader("jobsallocatedfull.txt"));
         int counting = 0;
 
-        if (countAll == false) {
-        while(read.hasNextLine()) {
-            String temp = read.nextLine();
-
-                if (temp.contains(TypeofCPUs) && temp.charAt(7) == month) {
-                    counting ++;
-                }   
-        }
-
-        if (counting != 0)
-            System.out.println(TypeofCPUs + ": " + counting);
-    }
-
-    if (countAll == true) {
         while(read.hasNextLine()) {
             String temp = read.nextLine();
 
@@ -121,9 +121,8 @@ public class CPUsCount  {
                 }   
         }
 
-        if (counting != 0)
-            System.out.println(TypeofCPUs + ": " + counting);
-    }
+        System.out.println(TypeofCPUs + ": " + counting);
+    
     return counting;
 }
 }

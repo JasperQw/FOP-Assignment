@@ -7,7 +7,7 @@ public class backfillJobsTable {
     public static void main(String[] args) {
         
         String [] col_names = {"Month", "Amount"};
-        Object[][] data = new Object [8][col_names.length];
+        Object[][] data = new Object [10][col_names.length];
         
         data[0][0] = "June";        data[0][1] = 28;
         data[1][0] = "July";        data[1][1] = 25;
@@ -17,6 +17,8 @@ public class backfillJobsTable {
         data[5][0] = "November";    data[5][1] = 274;
         data[6][0] = "December";    data[6][1] = 48;
         data[7][0] = "Sum";    data[7][1] = 28 + 25 + 253 + 99 + 23 + 274 + 48;
+        data[8][0] = "Max";    data[8][1] = "November (274)";
+        data[9][0] = "Min";    data[9][1] = "October (23)";
                 
         // Table formatting
         DefaultTableModel model = new DefaultTableModel(data, col_names);

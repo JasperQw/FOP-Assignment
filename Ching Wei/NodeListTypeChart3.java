@@ -24,7 +24,7 @@ public class NodeListTypeChart3 extends JPanel
         setBorder( new EmptyBorder(10, 10, 10, 10) );
         setLayout( new BorderLayout() );
 
-        JLabel titleLabel = new JLabel("Number of Each Type of Nodelist Being Used");
+        JLabel titleLabel = new JLabel("Jobs Allocated to Each type of Node");
         titleLabel.setHorizontalAlignment(JLabel.CENTER);
         add(titleLabel, BorderLayout.PAGE_START);
 
@@ -143,9 +143,11 @@ public class NodeListTypeChart3 extends JPanel
 
     private static void createAndShowGUI()
     {
-        PartitionCountChart panel = new PartitionCountChart();
+        NodeListTypeChart3 panel = new NodeListTypeChart3();
         
         panel.addHistogramColumn("cpu01", 971, Color.blue);
+        panel.addHistogramColumn("cpu[03,11]", 1, Color.blue);
+        panel.addHistogramColumn("cpu[03-04]", 4, Color.blue);
         panel.addHistogramColumn("cpu[08-11]", 1, Color.blue);
         panel.addHistogramColumn("cpu[09,11]", 1, Color.blue);
         panel.addHistogramColumn("cpu[09-10]", 27, Color.blue);
@@ -153,11 +155,7 @@ public class NodeListTypeChart3 extends JPanel
         panel.addHistogramColumn("cpu[12,14-15]", 2, Color.blue);
         panel.addHistogramColumn("cpu[12,15]", 1, Color.blue);
         panel.addHistogramColumn("cpu[12-13,15]", 4, Color.blue);
-        panel.addHistogramColumn("cpu[12-13]", 163, Color.blue);
-        panel.addHistogramColumn("cpu[12-15]", 101, Color.blue);
-        panel.addHistogramColumn("cpu[13,15]", 2, Color.blue);
-        panel.addHistogramColumn("cpu[13-14]", 4, Color.blue);
-        panel.addHistogramColumn("cpu[14-15]", 3, Color.blue);
+        
         
 
         panel.layoutHistogram();

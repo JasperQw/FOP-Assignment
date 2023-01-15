@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.border.*;
 
-public class CPUsCount_chart extends JPanel
+public class NodeListTypeChart4 extends JPanel
 {
     private int histogramHeight = 200;
     private int barWidth = 50;
@@ -18,13 +18,13 @@ public class CPUsCount_chart extends JPanel
     private List<Bar> bars = new ArrayList<Bar>();
 
     
-    public CPUsCount_chart()
+    public NodeListTypeChart4()
     {   
         
         setBorder( new EmptyBorder(10, 10, 10, 10) );
         setLayout( new BorderLayout() );
 
-        JLabel titleLabel = new JLabel("Number of Jobs Allocated to Each Type of CPUs");
+        JLabel titleLabel = new JLabel("Jobs Allocated to Each type of Node");
         titleLabel.setHorizontalAlignment(JLabel.CENTER);
         add(titleLabel, BorderLayout.PAGE_START);
 
@@ -143,46 +143,23 @@ public class CPUsCount_chart extends JPanel
 
     private static void createAndShowGUI()
     {
-        CPUsCount_chart panel = new CPUsCount_chart();
+        NodeListTypeChart4 panel = new NodeListTypeChart4();
         
-        panel.addHistogramColumn("1", 860, Color.blue);
-        panel.addHistogramColumn("10", 55, Color.blue);
-        panel.addHistogramColumn("11", 13, Color.blue);
-        panel.addHistogramColumn("12", 116, Color.blue);
-        panel.addHistogramColumn("128", 1, Color.blue);
-        panel.addHistogramColumn("14", 6, Color.blue);
-        panel.addHistogramColumn("15", 5, Color.blue);
-        panel.addHistogramColumn("16", 2325, Color.blue);
-        panel.addHistogramColumn("18", 4, Color.blue);
-        panel.addHistogramColumn("2", 197, Color.blue);
-        panel.addHistogramColumn("20", 20, Color.blue);
-        panel.addHistogramColumn("22", 7, Color.blue);
-        panel.addHistogramColumn("24", 332, Color.blue);
-        panel.addHistogramColumn("3", 4, Color.blue);
-        panel.addHistogramColumn("30", 18, Color.blue);
-        panel.addHistogramColumn("31", 2, Color.blue);
-        panel.addHistogramColumn("32", 1473, Color.blue);
-        panel.addHistogramColumn("34", 1, Color.blue);
-        panel.addHistogramColumn("35", 24, Color.blue);
-        panel.addHistogramColumn("36", 3, Color.blue);
-        panel.addHistogramColumn("39", 3, Color.blue);
-        panel.addHistogramColumn("4", 517, Color.blue);
-        panel.addHistogramColumn("40", 3, Color.blue);
-        panel.addHistogramColumn("45", 1, Color.blue);
-        panel.addHistogramColumn("48", 394, Color.blue);
-        panel.addHistogramColumn("5", 82, Color.blue);
-        panel.addHistogramColumn("50", 17, Color.blue);
-        panel.addHistogramColumn("56", 3, Color.blue);
-        panel.addHistogramColumn("6", 56, Color.blue);
-        panel.addHistogramColumn("60", 2, Color.blue);
-        panel.addHistogramColumn("64", 659, Color.blue);
-        panel.addHistogramColumn("7", 4, Color.blue);
-        panel.addHistogramColumn("8", 2007, Color.blue);
-        panel.addHistogramColumn("96", 2, Color.blue);
+        panel.addHistogramColumn("cpu01", 971, Color.blue);
+        panel.addHistogramColumn("cpu[12-13]", 163, Color.blue);
+        panel.addHistogramColumn("cpu[12-15]", 101, Color.blue);
+        panel.addHistogramColumn("cpu[13,15]", 2, Color.blue);
+        panel.addHistogramColumn("cpu[13-14]", 4, Color.blue);
+        panel.addHistogramColumn("cpu[14-15]", 3, Color.blue);
+        panel.addHistogramColumn("cpu[04-05]", 1, Color.blue);
+        panel.addHistogramColumn("cpu[07,11]", 4, Color.blue);
+        panel.addHistogramColumn("cpu[07-08]", 1, Color.blue);
+        panel.addHistogramColumn("cpu[08-09]", 3, Color.blue);
+        
 
         panel.layoutHistogram();
 
-        JFrame frame = new JFrame("CPUs Count");
+        JFrame frame = new JFrame("Nodelist Count");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add( panel );
         frame.setLocationByPlatform( true );
