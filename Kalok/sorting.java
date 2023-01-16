@@ -56,19 +56,13 @@ public class sorting {
             if (allocated_JobId.indexOf(completed_JobId.get(i)) != -1 && submitted_JobId.indexOf(completed_JobId.get(i)) != -1)
                 removedIncompletedJobsId.add(completed_JobId.get(i));
         }
+        Collections.sort(removedIncompletedJobsId);
 
-        //Extract the JobId with completed Job flows (submit -> allocate -> complete)
+        //Extract the JobId with Job flows from allocate -> complete
         ArrayList<String> removedIncompletedJobsId_allo_comp = new ArrayList<>();
         for (int i = 0; i < completed_JobId.size(); i ++) {
             if (allocated_JobId.indexOf(completed_JobId.get(i)) != -1)
             removedIncompletedJobsId_allo_comp.add(completed_JobId.get(i));
-        }
-
-        //Extract the JobId that allocated and completed within June to December
-        ArrayList<String> AllocatedandCompleted = new ArrayList<>();
-        for (int i = 0; i < completed_JobId.size(); i ++) {
-            if (allocated_JobId.indexOf(completed_JobId.get(i)) != -1)
-                AllocatedandCompleted.add(completed_JobId.get(i));
         }
 
         PrintWriter write = new PrintWriter(new FileOutputStream("simplified3importantall.txt",true));
@@ -76,8 +70,6 @@ public class sorting {
         //create an ArrayList to store all the submitted, allocate, completed Job
         ArrayList<String> all_together = new ArrayList<>();
 
-         //Create an ArrayList to store the Jobid for allocate and completed
-         ArrayList<String> all_together_allo_comp = new ArrayList<>();
 
         for(int i = 0; i < submitted_Job.size(); i ++) {
             all_together.add(submitted_Job.get(i));
@@ -85,12 +77,10 @@ public class sorting {
 
         for(int i = 0; i < allocated_Job.size(); i ++) {
             all_together.add(allocated_Job.get(i));
-            all_together_allo_comp.add(allocated_Job.get(i));
         }
 
         for(int i = 0; i < completed_Job.size(); i ++) {
             all_together.add(completed_Job.get(i));
-            all_together_allo_comp.add(completed_Job.get(i));
         }
 
         //sort the all_together and write it into txt file to confirm that same JobId can be placed together
@@ -101,29 +91,13 @@ public class sorting {
 
         write.close();
 
-        //Create an ArrayList to store the Jobid for allocate and completed
-        ArrayList<String> OnlyAlloAndComp_JobId = new ArrayList<>();
-
-        for (int i = 0; i < all_together_allo_comp.size(); i ++ ) {
-            String [] temp = all_together_allo_comp.get(i).split(" ");
-            OnlyAlloAndComp_JobId.add(temp[0]);
-        }
-
-        //Create an ArrayList to store the Jobid in all_together
-        ArrayList<String> all_togetherOnlyId = new ArrayList<>();
-
-
-        for (int i = 0; i < all_together.size(); i ++ ) {
-            String [] temp = all_together.get(i).split(" ");
-            all_togetherOnlyId.add(temp[0]);
-        }
 
         System.out.println("All JobID that contains i) Job Submission ii) Job Allocation  iii)Job Completion in the log file for month "+a+"\n are printed onto [[simplified3importantall.txt]]");
         System.out.println();
 
-        Collections.sort(removedIncompletedJobsId);
+        
         Scanner scan = new Scanner(new FileReader("extracted_log"));
-        PrintWriter writer = new PrintWriter(new FileOutputStream("SubmitToCompleteANDMonth"+a+".txt"));
+        
 
         //Create an ArrayList to store the information of Jobs which have completed work flows only
         ArrayList<String> temporary = new ArrayList<>();
@@ -233,7 +207,8 @@ public class sorting {
 
             else continue;
         }
-
+        PrintWriter writer = new PrintWriter(new FileOutputStream("SubmitToCompleteANDMonth"+a+".txt"));
+        
         Collections.sort(completed_workFlows_JobsID);
         Collections.sort(completed_workFlows_JobsID_AlloComp);
         for (int i = 0; i < completed_workFlows_JobsID.size(); i ++) {
