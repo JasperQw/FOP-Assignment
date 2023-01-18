@@ -16,7 +16,7 @@ public class SecurityError {
             String keyword2 = "JobId";
             int totalError = 0;
             //read the log file and write the line that contain the keyword into a txt.file
-            Scanner sc = new Scanner(new FileInputStream("C:\\Users\\ProUser\\Downloads\\extracted_log"));
+            Scanner sc = new Scanner(new FileInputStream("extracted_log"));
             PrintWriter pw = new PrintWriter(new FileOutputStream("SecurityError.txt"));
             while(sc.hasNextLine()) {
                 String read = sc.nextLine();
