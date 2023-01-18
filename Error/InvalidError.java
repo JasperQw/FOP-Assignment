@@ -1,6 +1,7 @@
 import Data.Table;
 import java.util.Scanner;
 import java.io.*;
+import java.text.DecimalFormat;
 public class InvalidError {
     public static void main(String[] args) throws Exception {
         String keywords1 = "Invalid";
@@ -8,6 +9,7 @@ public class InvalidError {
         String keywords3 = "slurm";
         String keywords4 = "submit";
         int totalError = 0;
+        
         //read the log file and write the line that contain the keyword into a txt.file
         Scanner sc = new Scanner(new FileInputStream("C:\\Users\\ProUser\\Downloads\\extracted_log"));
         PrintWriter pw = new PrintWriter(new FileOutputStream("InvalidError.txt"));
@@ -63,12 +65,23 @@ public class InvalidError {
                 AnalysisError obj = new AnalysisError(Error6,Error7,Error8,Error9,Error10,Error11,Error12);
                 System.out.println("Month with the most invalid qos error: "+ obj.Max());   
                 System.out.println("Month with the least invalid qos error: "+ obj.Min());  
-                System.out.printf("Average invalid qos error in each month: %.2f ", obj.Average(totalError));
+                System.out.printf("Average invalid qos error among the months: %.2f ", obj.Average(totalError));
+                
+                //tabulate the attributes of error and details
+                DecimalFormat df = new DecimalFormat("#.00");
+                String title1 = "Data Analysis of Invalid Qos Error";
+                String [] columns1 = {"Attributes of Error", "Details"};
+                Object data1[][] = {{"Total error", totalError },
+                                       {"Month with the highest error", obj.Max()},
+                                       {"Month with the lowest error",obj.Min()},
+                                       {"Average error among the month", df.format(obj.Average(totalError))}
+                                       };
+                    Table tb1 = new Table(title1, columns1,data1);    
                 
                 //tabulate the month and number of error in each month
                 String title = "Invalid Qos Error";
-                    String [] columns = {"Month", "Number of Error"};
-                    Object data[][] = {{"June", Error6 },
+                String [] columns = {"Month", "Number of Error"};
+                Object data[][] = {{"June", Error6 },
                                        {"July", Error7},
                                        {"August",Error8},
                                        {"September", Error9},
