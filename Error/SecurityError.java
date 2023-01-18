@@ -1,5 +1,6 @@
 import Data.Table;
 import java.io.*;
+import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -24,7 +25,7 @@ public class SecurityError {
                         totalError += 1;
                     }
             }          
-            System.out.println("The total security error in this log file is: " + totalError);
+            System.out.println("The total security violation error in this log file is: " + totalError);
             sc.close();
             pw.close();
 
@@ -100,13 +101,13 @@ public class SecurityError {
                 i++; 
             }
             
-            //filter out the repeeated job id using set,list and hashmap
+            //filter out the repeated job id using set,list and hashmap
             List<String> ID = Arrays.asList(JobId);
-            Set<String> printedNames = new HashSet<>();
+            Set<String> printedID = new HashSet<>();
             int count = 0;
             for (String job_id : ID) {
-                if (!printedNames.contains(job_id)) {
-                     printedNames.add(job_id);
+                if (!printedID.contains(job_id)) {
+                     printedID.add(job_id);
                      count++;
                 }
             }
@@ -148,5 +149,17 @@ public class SecurityError {
                 String title2 = "Job Id with number of security violation error";
                 String [] columns2 = {"Job Id", "Number of Error"};
                 Table tb2 = new Table(title2, columns2, data);
+                
+                //tabulate the attributes of error and details
+                DecimalFormat df = new DecimalFormat("#.00");
+                String title3 = "Data Analysis of Security Violation Error";
+                String [] columns3 = {"Attributes of Error", "Details"};
+                Object data3[][] = {{"Total error", totalError },
+                                       {"Month with the highest error", obj.Max()},
+                                       {"Month with the lowest error",obj.Min()},
+                                       {"Average error among the month", df.format(obj.Average(totalError))},
+                                       {"Total job id with security error",count}
+                                       };
+                    Table tb3 = new Table(title3, columns3,data3);    
     }
 }
