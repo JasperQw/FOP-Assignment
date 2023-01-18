@@ -2,6 +2,7 @@ import Data.Table;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
+import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -72,20 +73,7 @@ public class QueueJob {
                 System.out.println("Month with the most requeuing job: "+ obj.Max());   
                 System.out.println("Month with the least requeuing job: "+ obj.Min());  
                 System.out.printf("Average requeuing job in each month: %.2f ", obj.Average(total));
-                
-                //tabulate month and number of requeuing job
-                String title1 = "Requeuing Job";
-                String [] columns1 = {"Month", "Number of Requeuing Job"};
-                Object data1[][] = {{"June", M6 },
-                                   {"July", M7},
-                                   {"August",M8},
-                                   {"September", M9},
-                                   {"October", M10},
-                                   {"November", M11},
-                                   {"December", M12}
-                                    };
-                    Table tb1 = new Table(title1, columns1,data1);
-                    
+
             // find the job id using pattern and matcher       
             Scanner input1 = new Scanner(new FileInputStream("Queue Job.txt"));
             String regex = "JobId=(\\w+)";
@@ -142,15 +130,44 @@ public class QueueJob {
                         stringData[c] = entrySet[c].getKey();
                         integerData[c] = entrySet[c].getValue();
                 }
-                Object[][] data = new Object[stringData.length][count];
-                    for (int j = 0; j < data.length; j++) {
-                         data[j][0] = stringData[j];
-                        for(int h = 1; h < data.length; h++){
-                            data[j][h] = integerData[j];
+                Object[][] data3 = new Object[stringData.length][count];
+                    for (int j = 0; j < data3.length; j++) {
+                         data3[j][0] = stringData[j];
+                        for(int h = 1; h < data3.length; h++){
+                            data3[j][h] = integerData[j];
                         }
                     }
-                String title2 = "Job Id with number of Requeuing Job";
-                String [] columns2 = {"Job Id", "Number of Requeuing Job by each Job Id"};
-                Table tb2 = new Table(title2, columns2, data);
+               //tabulate the job id and number of requeuing job by each job id
+                String title3 = "Job Id with number of Requeuing Job";
+                String [] columns3 = {"Job Id", "Number of Requeuing Job by each Job Id"};
+                Table tb3 = new Table(title3, columns3, data3);
+                
+                //tabulate month and number of requeuing job
+                String title1 = "Requeuing Job";
+                String [] columns1 = {"Month", "Number of Requeuing Job"};
+                Object data1[][] = {{"June", M6 },
+                                   {"July", M7},
+                                   {"August",M8},
+                                   {"September", M9},
+                                   {"October", M10},
+                                   {"November", M11},
+                                   {"December", M12}
+                                    };
+                Table tb1 = new Table(title1, columns1,data1);
+
+                    
+                //tabulate the attributes of requeuing job and details
+                DecimalFormat df = new DecimalFormat("#.00");
+                String title2 = "Data Analysis of Requeuing Job";
+                String [] columns2 = {"Attributes of Requeuing Job", "Details"};
+                Object data2[][] = {{"Total number of requeuing job", total },
+                                       {"Month with the highest requeuing job", obj.Max()},
+                                       {"Month with the lowest requeuing job",obj.Min()},
+                                       {"Average requeuing job among the month", df.format(obj.Average(total))},
+                                       {"Total job id with requeuing job",count}
+                                       };
+                Table tb2 = new Table(title2, columns2,data2);    
+                    
+              
     }
 }
