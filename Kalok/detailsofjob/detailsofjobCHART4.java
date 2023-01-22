@@ -139,7 +139,7 @@ public class detailsofjobCHART4 extends JPanel
         }
     }
 
-    private static void createAndShowGUI()
+    public static void createAndShowGUI()
     {
         detailsofjobCHART4 panel = new detailsofjobCHART4();
         panel.addHistogramColumn("Jobs Allocated", 1316, Color.red);

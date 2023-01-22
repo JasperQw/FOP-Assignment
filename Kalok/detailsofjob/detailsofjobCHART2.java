@@ -139,7 +139,7 @@ public class detailsofjobCHART2 extends JPanel
         }
     }
 
-    private static void createAndShowGUI()
+    public static void createAndShowGUI()
     {
         detailsofjobCHART2 panel = new detailsofjobCHART2();
         panel.addHistogramColumn("June", 1893, Color.black);

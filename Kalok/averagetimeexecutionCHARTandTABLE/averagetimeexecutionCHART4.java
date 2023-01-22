@@ -136,7 +136,7 @@ public class averagetimeexecutionCHART4 extends JPanel
 
 
 
-    private static void createAndShowGUI()
+    public static void createAndShowGUI()
     {
         averagetimeexecutionCHART4 panel = new averagetimeexecutionCHART4();
         panel.addHistogramColumn("June", 17859.4824, Color.blue);
