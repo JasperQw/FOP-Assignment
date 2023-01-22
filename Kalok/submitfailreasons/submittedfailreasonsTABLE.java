@@ -30,14 +30,14 @@ public class submittedfailreasonsTABLE {
 
         // Data to be displayed in the JTable
         String[][] data = {
-            { "    a","Invalid partition name specified", "120"},
-            { "    b","Invalid qos specification", "456"},
-            { "    c","Job violates accounting/QOS policy \n(job submit limit, user's size and/or time limits)", "396"},
-            { "    d","Requested node configuration is not available", "357"},
-            { "    e","Invalid node name specified", "3"},
-            { "    f","Requested reservation is invalid", "3"},
-            { "    g","Invalid account or account/partition combination specified", "69"},
-            { "-","Overall Total", "1404"},
+            { "    a","Invalid partition name specified", "40"},
+            { "    b","Invalid qos specification", "152"},
+            { "    c","Job violates accounting/QOS policy \n(job submit limit, user's size and/or time limits)", "132"},
+            { "    d","Requested node configuration is not available", "119"},
+            { "    e","Invalid node name specified", "1"},
+            { "    f","Requested reservation is invalid", "1"},
+            { "    g","Invalid account or account/partition combination specified", "23"},
+            { "    -","Overall Total", "468"},
 
 
         };

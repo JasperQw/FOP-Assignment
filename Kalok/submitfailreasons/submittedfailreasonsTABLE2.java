@@ -30,10 +30,10 @@ public class submittedfailreasonsTABLE2 {
 
         // Data to be displayed in the JTable
         String[][] data = {
-            { "Maximum","456"},
-            { "Minimum","3"},
-            { "Average(By Type of Errors)","200"},
-            { "Average(By Overall Time)","7"},
+            { "Maximum","152"},
+            { "Minimum","1"},
+            { "Average(By Type of Errors)","66"},
+            { "Average(By Overall Time)","2"},
             
         };
 

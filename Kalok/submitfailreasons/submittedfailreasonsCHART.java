@@ -149,13 +149,13 @@ private class ColorIcon implements Icon
     private static void createAndShowGUI()
     {
         submittedfailreasonsCHART panel = new submittedfailreasonsCHART();
-        panel.addHistogramColumn("Invalid partition name specified", 120, Color.black);
-        panel.addHistogramColumn("Invalid qos specification", 456, Color.magenta);
-        panel.addHistogramColumn("Job violates accounting/QOS policy", 396, Color.red);
-        panel.addHistogramColumn("Requested node configuration is not available", 357, Color.green);
-        panel.addHistogramColumn("Invalid node name specified", 3, Color.cyan);
-        panel.addHistogramColumn("Requested reservation is invalid", 3, Color.yellow);
-        panel.addHistogramColumn("Invalid account or account/partition combination specified", 69, Color.orange);
+        panel.addHistogramColumn("Invalid partition name specified", 40, Color.black);
+        panel.addHistogramColumn("Invalid qos specification", 152, Color.magenta);
+        panel.addHistogramColumn("Job violates accounting/QOS policy", 132, Color.red);
+        panel.addHistogramColumn("Requested node configuration is not available", 119, Color.green);
+        panel.addHistogramColumn("Invalid node name specified", 1, Color.cyan);
+        panel.addHistogramColumn("Requested reservation is invalid", 1, Color.yellow);
+        panel.addHistogramColumn("Invalid account or account/partition combination specified", 23, Color.orange);
         panel.layoutHistogram();
 
         JFrame frame = new JFrame("Histogram Panel");
