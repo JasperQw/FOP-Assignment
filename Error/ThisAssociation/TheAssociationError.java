@@ -243,7 +243,6 @@ public class TheAssociationError {
                        System.out.println(counts.get(person));  
                 }
                 
-                //tabulate the users'names and number of errors made
                 String[] stringData = counts.keySet().toArray(new String[counts.size()]);
                 Integer[] integerData = counts.values().toArray(new Integer[counts.size()]);
                 Map.Entry<String,Integer>[] entrySet = counts.entrySet().toArray(new Map.Entry[counts.size()]);
@@ -287,11 +286,9 @@ public class TheAssociationError {
                 
                 //Tabulate the users' names and number of errors made    
                 ThisAssociationErrorMonth errorMonth6 = new ThisAssociationErrorMonth(6);
-                ThisAssociationErrorMonth errorMonth6 = new ThisAssociationErrorMonth(7);
                 ThisAssociationErrorMonth errorMonth8 = new ThisAssociationErrorMonth(8);
                 ThisAssociationErrorMonth errorMonth9 = new ThisAssociationErrorMonth(9);
                 ThisAssociationErrorMonth errorMonth10 = new ThisAssociationErrorMonth(10);
                 ThisAssociationErrorMonth errorMonth11 = new ThisAssociationErrorMonth(11);
-                ThisAssociationErrorMonth errorMonth6 = new ThisAssociationErrorMonth(12);
     }
 }
