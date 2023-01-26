@@ -1,8 +1,0 @@
-
-[2022-06-19T10:52:24.888] error: Nodes umhpc not responding
-[2022-06-19T10:53:06.067] error: Nodes umhpc not responding, setting DOWN
-[2022-06-19T11:09:26.834] error: Nodes umhpc not responding, setting DOWN
-[2022-06-20T15:59:35.754] error: Nodes umhpc not responding, setting DOWN
-[2022-06-20T16:07:24.564] error: Nodes umhpc not responding
-[2022-06-20T16:07:55.731] error: Nodes umhpc not responding, setting DOWN
-[2022-09-23T11:50:01.529] error: Nodes umhpc not responding, setting DOWN
