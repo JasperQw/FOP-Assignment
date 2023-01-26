@@ -243,7 +243,6 @@ public class TheAssociationError {
                        System.out.println(counts.get(person));  
                 }
                 
-                //tabulate the users'names and number of errors made
                 String[] stringData = counts.keySet().toArray(new String[counts.size()]);
                 Integer[] integerData = counts.values().toArray(new Integer[counts.size()]);
                 Map.Entry<String,Integer>[] entrySet = counts.entrySet().toArray(new Map.Entry[counts.size()]);
