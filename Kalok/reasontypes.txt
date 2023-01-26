@@ -1,7 +1,0 @@
-Invalid partition name specified
-Invalid qos specification
-Job violates accounting/QOS policy (job submit limit, user's size and/or time limits)
-Requested node configuration is not available
-Invalid node name specified
-Requested reservation is invalid
-Invalid account or account/partition combination specified
